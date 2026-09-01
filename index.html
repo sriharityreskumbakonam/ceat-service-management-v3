@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071827">
+<title>Sri Hari Tyres — Smart Service V5</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app" class="app">
+<header class="topbar">
+  <div class="brand">SRI HARI TYRES <small>AUTHORISED CEAT TYRES &amp; SERVICE CENTRE • SMART SERVICE</small></div>
+  <div><span class="live" id="dbStatus">● DATABASE CONNECTING…</span><button class="logout" id="logoutBtn">Logout</button></div>
+</header>
+<div class="shell">
+<aside class="sidebar">
+  <div class="menu-title">Menu</div>
+  <button class="nav active" data-page="dashboard">📊 Dashboard</button>
+  <button class="nav" data-page="vehicles">🚗 Vehicles</button>
+  <button class="nav" data-page="service">🧾 Service Record</button>
+  <button class="nav" data-page="history">📋 Service History</button>
+  <button class="nav" data-page="reminders">🔔 Reminders</button>
+  <button class="nav" data-page="reports">📈 Reports</button>
+</aside>
+<main class="main" id="main"></main>
+</div>
+</div>
+<div id="saveStatus" class="save-status"></div>
+<div id="toast" class="toast"></div>
+<div id="printHost"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script src="app.js?v=20260901-v7"></script>
+</body>
+</html>
