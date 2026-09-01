@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071827"><meta name="build" content="Sri Hari Smart Service V15 FINAL PDF FIX">
+<title>Sri Hari Tyres — Smart Service V5</title>
+<style>
+*{box-sizing:border-box}:root{--navy:#071827;--navy2:#0d2438;--blue:#0879c9;--sky:#e9f7ff;--yellow:#ffd21a;--green:#18a957;--red:#e53935;--text:#172235;--muted:#68778a;--line:#d8e2eb;--white:#fff}html,body{margin:0;min-height:100%;font-family:Inter,Arial,Helvetica,sans-serif;background:#f4f8fb;color:var(--text)}button,input,select,textarea{font:inherit}button{border:0;cursor:pointer}.app{min-height:100vh}.topbar{height:68px;background:linear-gradient(110deg,#061525,#0d2d47);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 20px;position:sticky;top:0;z-index:30;box-shadow:0 2px 12px #0013}.brand{font-weight:900;font-size:17px;letter-spacing:.3px}.brand small{display:block;color:#8bd8ff;font-size:9px;letter-spacing:1.1px;margin-top:4px}.live{display:inline-flex;gap:5px;align-items:center;background:#123d2a;color:#7dffb0;padding:6px 9px;border-radius:99px;font-size:10px;font-weight:800;margin-right:8px}.logout{background:#17354e;color:#fff;border:1px solid #31536c;border-radius:8px;padding:9px 13px;font-weight:800}.shell{display:flex;min-height:calc(100vh - 68px)}.sidebar{width:215px;flex:0 0 215px;background:#fff;border-right:1px solid var(--line);padding:12px 9px;position:sticky;top:68px;height:calc(100vh - 68px)}.menu-title{font-size:10px;color:#8a98a7;text-transform:uppercase;font-weight:900;padding:8px 10px}.nav{width:100%;text-align:left;background:#fff;color:#304256;padding:11px 12px;border-radius:9px;margin:2px 0;font-weight:800}.nav:hover{background:#f0f8fd}.nav.active{background:var(--yellow);color:#111}.main{flex:1;min-width:0;padding:22px;max-width:1320px;margin:0 auto;width:100%}.page-head{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:16px}.page-head h1{font-size:27px;margin:0}.actions{display:flex;gap:8px;flex-wrap:wrap}.btn{background:#fff;border:1px solid var(--line);color:#22364a;border-radius:9px;padding:10px 14px;font-weight:850}.btn.primary{background:var(--yellow);border-color:#e7bb00;color:#111}.btn.blue{background:var(--blue);border-color:var(--blue);color:#fff}.btn.green{background:var(--green);border-color:var(--green);color:#fff}.btn:disabled{opacity:.45;cursor:not-allowed}.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:16px;box-shadow:0 3px 14px #17344b0d}.card h2{margin:0 0 15px;font-size:17px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:13px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}label{display:block;font-size:11px;color:var(--muted);font-weight:850;margin-bottom:6px}.req{color:var(--red)}.opt{color:#d09a00}input,select,textarea{width:100%;padding:11px 12px;border:1px solid #cdd9e4;border-radius:9px;background:#fff;color:var(--text);outline:none;resize:vertical}input:focus,select:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px #0879c914}.hint{font-size:11px;color:#718095;line-height:1.5;margin:11px 0 0}.service-table{overflow:auto;border:1px solid var(--line);border-radius:10px}.service-head,.service-row{display:grid;grid-template-columns:minmax(220px,1fr) 90px 130px 130px;gap:10px;align-items:center;padding:9px 11px;min-width:610px}.service-head{background:var(--navy);color:#fff;font-size:10px;font-weight:900}.service-row{border-top:1px solid var(--line);font-size:13px}.service-row .amt{text-align:right;font-weight:900}.totals{max-width:390px;margin:15px 0 0 auto}.total-line{display:flex;justify-content:space-between;align-items:center;padding:7px 0;color:var(--muted);font-size:13px}.total-line input{width:145px}.grand{border-top:2px solid var(--navy);color:var(--text);font-size:18px;font-weight:950;padding-top:10px}.bottom-actions{display:flex;justify-content:flex-end;gap:9px;padding:2px 0 22px}.save-status{display:none;position:fixed;inset:0;background:#00101bb8;z-index:100;align-items:center;justify-content:center;padding:20px}.save-box{width:min(560px,100%);max-height:90vh;overflow:auto;background:#fff;border-radius:18px;padding:28px;text-align:center;box-shadow:0 25px 80px #0008}.save-icon{font-size:40px}.save-box h3{font-size:21px;margin:7px 0}.save-box p{color:var(--muted);font-size:13px}.save-box button{border-radius:9px;padding:11px 30px;font-weight:900}.message-preview{margin:14px 0;text-align:left;background:#f7fafc;border:1px solid var(--line);border-radius:10px;padding:13px;font-size:12px;line-height:1.55;max-height:300px;overflow:auto}.choice-row{display:flex;justify-content:center;gap:8px}.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stat{background:#fff;border:1px solid var(--line);border-radius:13px;padding:17px}.stat .label{font-size:10px;color:var(--muted);font-weight:900}.stat .num{font-size:27px;font-weight:950;margin-top:7px}.hero{background:linear-gradient(120deg,#06223a,#0b79bf);color:#fff;border-radius:16px;padding:22px;margin-bottom:16px}.hero h1{margin:0 0 5px}.empty{text-align:center;padding:30px;color:#7a8998}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:12px}th{background:var(--navy);color:#fff;text-align:left;padding:10px;white-space:nowrap}td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}td.num,th.num{text-align:right}.badge{display:inline-block;border-radius:99px;padding:5px 9px;font-size:10px;font-weight:900}.badge.due{background:#ffe4e2;color:#b5221f}.badge.ok{background:#def8e9;color:#16733e}.badge.free{background:#fff4c7;color:#8a6500}.search{max-width:450px}.reminder{border:1px solid var(--line);border-radius:12px;padding:14px;margin-top:10px;display:flex;justify-content:space-between;gap:15px;align-items:center}.reminder h3{margin:0 0 5px;font-size:14px}.reminder small{color:var(--muted)}.notice{background:#fff9df;border:1px solid #f2dc7a;border-radius:10px;padding:11px;font-size:11px;color:#6e5a00;line-height:1.5}.rule-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.rule{background:#f8fbfd;border:1px dashed #b9c9d6;border-radius:10px;padding:13px}.rule strong{display:block;margin-bottom:6px}.rule span{font-size:11px;color:var(--muted)}.toast{position:fixed;right:18px;bottom:18px;background:#0a2337;color:#fff;padding:12px 15px;border-radius:10px;box-shadow:0 12px 35px #0004;z-index:200;display:none;font-size:12px;font-weight:800}.filterbar{display:grid;grid-template-columns:1fr 1fr auto;gap:9px;align-items:end;background:#f7fafc;border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:9px}.quick-filters{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 14px}.quick-filters button{background:#fff;border:1px solid var(--line);border-radius:7px;padding:7px 10px;font-size:10px;font-weight:850;color:#41566a}.quick-filters button:hover{border-color:var(--blue);color:var(--blue)}.filter-actions{display:flex;gap:7px}.result-bar{display:flex;justify-content:space-between;gap:10px;align-items:center;color:var(--muted);font-size:11px;margin:12px 0}.vehicle-filterbar,.reminder-filterbar{grid-template-columns:2fr 1fr 1fr auto}.vehicle-card{border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:10px;background:#fff}.vehicle-head{display:flex;justify-content:space-between;align-items:center;gap:10px}.vehicle-head h3{margin:0 0 4px;font-size:15px}.vehicle-head small{color:var(--muted)}.vehicle-details{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}.detail-chip{background:#f7fafc;border:1px solid #e2e9ef;border-radius:8px;padding:8px}.detail-chip span{display:block;font-size:9px;color:var(--muted);font-weight:850;text-transform:uppercase}.detail-chip b{display:block;font-size:12px;margin-top:3px}.history-expand{margin-top:12px}#printHost{display:none}@media print{@page{size:A4;margin:0}body{background:#fff!important}body>#app,body>#saveStatus,body>#toast{display:none!important}body>#printHost{display:block!important}#printHost .sheet{width:100%;min-height:100vh;margin:0;padding:12mm;background:#fff;print-color-adjust:exact;-webkit-print-color-adjust:exact}}@media(max-width:850px){.sidebar{width:58px;flex-basis:58px;padding:8px 4px}.menu-title{display:none}.nav{font-size:0;text-align:center;padding:12px 3px}.nav::first-letter{font-size:18px}.main{padding:12px}.grid2,.rule-grid{grid-template-columns:1fr}.grid3,.stat-grid{grid-template-columns:1fr 1fr}.page-head{align-items:flex-start}.page-head h1{font-size:21px}.bottom-actions{position:sticky;bottom:0;background:#f4f8fb;padding:10px 0;z-index:20}.bottom-actions .btn{flex:1;font-size:12px;padding:11px 6px}.topbar{height:62px;padding:0 10px}.sidebar{top:62px;height:calc(100vh - 62px)}}@media(max-width:760px){.filterbar,.vehicle-filterbar,.reminder-filterbar{grid-template-columns:1fr}.filter-actions{justify-content:flex-end}.vehicle-details{grid-template-columns:1fr 1fr}.result-bar{align-items:flex-start;flex-direction:column}.reminder{align-items:flex-start;flex-direction:column}.reminder>div:last-child{width:100%;display:flex;gap:6px;justify-content:flex-end}}@media(max-width:520px){.grid3,.stat-grid{grid-template-columns:1fr}.actions .btn{padding:9px 10px;font-size:11px}.brand{font-size:14px}.brand small{font-size:7px}.live{display:none}}@media(max-width:420px){.vehicle-details{grid-template-columns:1fr}.quick-filters button{flex:1}}
+
+.report-filterbar{grid-template-columns:1fr 1fr auto}.report-filterbar .filter-actions{display:flex;gap:7px;align-items:end}
+@media(max-width:760px){.report-filterbar{grid-template-columns:1fr}.report-filterbar .filter-actions{justify-content:flex-end}}
+/* V5 smart vehicle features */
+.profile-actions{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.profile-panel{margin-top:12px;border:1px solid #c9d9e6;border-radius:13px;background:#fbfdff;padding:15px}.profile-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.profile-title{font-size:18px;font-weight:950;color:#06447b}.profile-sub{font-size:11px;color:var(--muted);margin-top:3px}.profile-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}.profile-box{background:#fff;border:1px solid #e0e8ef;border-radius:9px;padding:9px}.profile-box span{display:block;font-size:9px;color:var(--muted);font-weight:900;text-transform:uppercase}.profile-box b{display:block;margin-top:3px;font-size:12px}.km-card{margin-top:12px;background:#fff;border:1px solid #d8e3eb;border-radius:10px;padding:12px}.km-head{display:flex;justify-content:space-between;gap:10px;font-size:11px;margin-bottom:10px}.km-head span{color:var(--muted)}.progress-item{margin:10px 0}.progress-item>div:first-child{display:flex;justify-content:space-between;font-size:11px;margin-bottom:5px}.progress-item>div:first-child span{font-weight:900;color:#06447b}.progress{height:8px;background:#e8eef3;border-radius:99px;overflow:hidden}.progress i{display:block;height:100%;background:var(--blue);border-radius:99px}.progress-item small{display:block;color:var(--muted);font-size:9px;margin-top:4px}.timeline{margin-top:13px;border-top:1px solid #e0e8ef;padding-top:12px}.timeline h4{margin:0 0 10px;font-size:13px}.timeline-item{display:flex;gap:10px;position:relative;padding:7px 0}.timeline-dot{width:9px;height:9px;border-radius:50%;background:var(--blue);margin-top:4px;flex:0 0 9px;box-shadow:0 0 0 4px #0879c914}.timeline-item b{display:block;font-size:11px}.timeline-item span,.timeline-item small{display:block;color:var(--muted);font-size:10px;margin-top:2px}.duplicate-notice{margin-top:6px;background:#fff9df;border:1px solid #f2dc7a;border-radius:8px;padding:7px 9px;color:#6e5a00;font-size:10px;line-height:1.4}.badge.soon{background:#fff0d6;color:#9a6200}.reminder.priority-due{border-left:4px solid var(--red)}.reminder.priority-soon{border-left:4px solid #f0a000}.reminder.priority-due h3,.reminder.priority-soon h3{font-weight:950}
+@media(max-width:760px){.profile-top{flex-direction:column}.profile-actions{justify-content:flex-start}.profile-grid{grid-template-columns:1fr 1fr}.km-head{flex-direction:column;gap:3px}}
+@media(max-width:420px){.profile-grid{grid-template-columns:1fr}}
+
+.saved-state{opacity:.9;cursor:not-allowed !important;}
+/* QA MODE */
+.qa-wrap{padding-bottom:30px}.qa-hero{background:linear-gradient(135deg,#071827,#0d2c45);border:1px solid #29425c;border-radius:14px;padding:18px;margin-bottom:14px}.qa-hero h1{margin:0 0 6px}.qa-hero p{margin:0;color:#9bb0c5;font-size:12px}.qa-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:12px 0}.qa-stat{background:#0d1c2d;border:1px solid #29425c;border-radius:12px;padding:13px}.qa-stat span{color:#91a7bd;font-size:10px}.qa-stat b{display:block;font-size:21px;margin-top:4px}.qa-progress{height:9px;background:#071522;border-radius:9px;overflow:hidden;margin:10px 0}.qa-progress>div{height:100%;background:#ffd21a}.qa-toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.qa-table-wrap{overflow:auto}.qa-table{width:100%;min-width:1000px;border-collapse:collapse;font-size:11px}.qa-table th{background:#091725;color:#91a7bd;text-align:left;padding:9px}.qa-table td{padding:9px;border-bottom:1px solid #29425c;vertical-align:top}.qa-table select,.qa-table textarea{background:#071522;color:#f5f7fb;border:1px solid #29425c;border-radius:7px;padding:7px}.qa-table textarea{min-width:180px;min-height:42px}.qa-pass{border-color:#35d27f!important}.qa-fail{border-color:#ff6975!important}.qa-blocked{border-color:#ffd21a!important}@media(max-width:760px){.qa-stats{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div id="app" class="app">
+<header class="topbar">
+  <div class="brand">SRI HARI TYRES <small>AUTHORISED CEAT TYRES &amp; SERVICE CENTRE • SMART SERVICE</small></div>
+  <div><span class="live" id="dbStatus">● DATABASE CONNECTING…</span><button class="logout" id="logoutBtn">Logout</button></div>
+</header>
+<div class="shell">
+<aside class="sidebar">
+  <div class="menu-title">Menu</div>
+  <button class="nav active" data-page="dashboard">📊 Dashboard</button>
+  <button class="nav" data-page="vehicles">🚗 Vehicles</button>
+  <button class="nav" data-page="service">🧾 Service Record</button>
+  <button class="nav" data-page="history">📋 Service History</button>
+  <button class="nav" data-page="reminders">🔔 Reminders</button>
+  <button class="nav" data-page="reports">📈 Reports</button><button class="nav" data-page="qa">🧪 QA / Test Mode</button>
+</aside>
+<main class="main" id="main"></main>
+</div>
+</div>
+<div id="saveStatus" class="save-status"></div>
+<div id="toast" class="toast"></div>
+<div id="printHost"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+<script>
+const firebaseConfig={apiKey:"AIzaSyCKWITST9Xl-RyS-K8WMHcgZ9xxyKfBmlo",authDomain:"ceat-service-management.firebaseapp.com",databaseURL:"https://ceat-service-management-default-rtdb.asia-southeast1.firebasedatabase.app",projectId:"ceat-service-management",storageBucket:"ceat-service-management.firebasestorage.app",messagingSenderId:"498531760991",appId:"1:498531760991:web:11818a77a9185ce316d4ea"};
+const DB_URL=firebaseConfig.databaseURL.replace(/\/$/,"");
+let db=DB_URL, recordsRef="serviceRecords", remindersRef="reminders", recordCounterRef="serviceRecordCounter";
+let fbReady=false;
+let lastSavedFingerprint="";
+const fbPath=p=>String(p||"").replace(/^\/+|\/+$/g,"");
+const fbUrl=p=>`${DB_URL}/${fbPath(p)}.json`;
+const restRef=p=>({path:fbPath(p)});
+function ref(_db,path){return restRef(path)}
+function makeKey(){return "-"+Date.now().toString(36)+Math.random().toString(36).slice(2,10)}
+function push(parent){const key=makeKey();return {path:fbPath(parent.path||parent)+"/"+key,key}}
+function set(r,data){return fetch(fbUrl(r.path||r),{method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)}).then(async res=>{if(!res.ok)throw new Error(`Firebase HTTP ${res.status}: ${await res.text()}`);return res.json()})}
+function remove(r){return fetch(fbUrl(r.path||r),{method:"DELETE"}).then(async res=>{if(!res.ok)throw new Error(`Firebase HTTP ${res.status}: ${await res.text()}`);return true})}
+function onValue(r,cb,errCb){let stopped=false;const read=async()=>{try{const res=await fetch(fbUrl(r.path||r),{cache:"no-store"});if(!res.ok)throw new Error(`Firebase HTTP ${res.status}`);const value=await res.json();if(!stopped)cb({val:()=>value});}catch(e){if(!stopped&&errCb)errCb(e)}};read();const timer=setInterval(read,5000);return()=>{stopped=true;clearInterval(timer)}}
+window.firebaseFns={ref,push,set,onValue,remove};
+const SHOP={name:"SRI HARI TYRES",sub:"AUTHORISED CEAT TYRES & SERVICE CENTRE",address:["50-1, Venkatesha Nagar,","Thiruvidaimaruthur Main Road,","Ullur, Kumbakonam - 612001"],phone:"6382212457"};
+const SERVICES=["Wheel Alignment","Wheel Balancing","Rotation","Tubes","Tyre Fitment","Tubeless Tyre Repair","Nitrogen Gas","T/L Valve"];
+const TECHNICIANS=["ARIVAZHAGAN","ARAVIND","ARJUN","SARATH KUMAR","VIJAY"];
+const state={records:[],reminders:[],page:"dashboard",editingRecord:null,savedRecord:null};
+const $=s=>document.querySelector(s), esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+const money=n=>"₹"+(Number(n)||0).toLocaleString("en-IN",{minimumFractionDigits:2,maximumFractionDigits:2});
+const today=()=>{const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`};
+const prettyDate=d=>d?new Date(d+"T00:00:00").toLocaleDateString("en-IN",{day:"2-digit",month:"2-digit",year:"numeric"}):"—";
+const normalizePhone=p=>String(p||"").replace(/\D/g,"").replace(/^0/,"").replace(/^91(?=\d{10}$)/,"");
+function prefixValue(p){let n=0;for(const c of String(p||"")){n=n*26+(c.charCodeAt(0)-64)}return n}
+function prefixFromValue(n){let s="";while(n>0){n--;s=String.fromCharCode(65+(n%26))+s;n=Math.floor(n/26)}return s}
+function recordKey(v){const x=String(v||"").trim().toUpperCase();const m=x.match(/^(\d+)$/);if(m){const n=Number(m[1]);return {stage:0,prefix:0,num:n}}const a=x.match(/^([A-Z]+)(\d+)$/);if(a)return {stage:1,prefix:prefixValue(a[1]),num:Number(a[2])};return null}
+function compareRecordKeys(a,b){return a.stage-b.stage||a.prefix-b.prefix||a.num-b.num}
+function nextRecordFromMax(max){const k=recordKey(max);if(!k)return "1";if(k.stage===0){if(k.num<9999)return String(k.num+1);return "A1"}if(k.num<9999)return prefixFromValue(k.prefix)+String(k.num+1);return prefixFromValue(k.prefix+1)+"1"}
+const recordNo=()=>{let max=null,maxKey=null;for(const r of state.records){const k=recordKey(r.recordNo);if(k&&(!maxKey||compareRecordKeys(k,maxKey)>0)){max=r.recordNo;maxKey=k}}return nextRecordFromMax(max)};
+const addDays=(s,n)=>{const d=new Date(s+"T00:00:00");d.setDate(d.getDate()+n);return d.toISOString().slice(0,10)};
+const addMonths=(s,n)=>{const d=new Date(s+"T00:00:00"),day=d.getDate();d.setMonth(d.getMonth()+n);if(d.getDate()<day)d.setDate(0);return d.toISOString().slice(0,10)};
+const dateFiltered=(arr,f,t)=>arr.filter(r=>(r.date||"")>=(f||"0000-01-01")&&(r.date||"")<=(t||"9999-12-31"));
+const saveFingerprint=f=>JSON.stringify([f.date,f.customerName||"",f.mobile||"",f.vehicleModel||"",f.vehicleNumber||"",f.currentKm||0,f.classification||"",f.technician||"",f.total||0,(f.services||[]).map(x=>[x.name,x.qty,x.rate]),f.complaint||"",f.workDone||""]);
+
+async function initFirebase(){
+  try{
+    const controller=new AbortController();
+    const timer=setTimeout(()=>controller.abort(),10000);
+    const res=await fetch(fbUrl("serviceRecords"),{cache:"no-store",signal:controller.signal});
+    clearTimeout(timer);
+    if(!res.ok)throw new Error(`Firebase HTTP ${res.status}`);
+    fbReady=true;
+    const dbStatus=document.getElementById("dbStatus");
+    if(dbStatus){dbStatus.textContent="● LIVE DATABASE CONNECTED";dbStatus.style.background="#123d2a";dbStatus.style.color="#7dffb0";}
+    onValue(restRef("serviceRecords"),s=>{const v=s.val()||{};state.records=Object.entries(v).map(([id,r])=>({id,...r})).sort((a,b)=>(b.date||"").localeCompare(a.date||"")||(b.savedAt||"").localeCompare(a.savedAt||""));renderIfData()},e=>console.error("serviceRecords read failed",e));
+    onValue(restRef("reminders"),s=>{const v=s.val()||{};state.reminders=Object.entries(v).map(([id,r])=>({id,...r})).filter(r=>r.status!=="sent"&&r.status!=="completed"&&r.status!=="cancelled").sort((a,b)=>(a.dueDate||"").localeCompare(b.dueDate||""));renderIfData()},e=>console.error("reminders read failed",e));
+    renderIfData();
+  }catch(err){
+    fbReady=false;
+    const reason=err?.name==="AbortError" ? "Firebase connection timed out (10s)." : (err?.message||"Unknown error");
+    const dbStatus=document.getElementById("dbStatus");if(dbStatus){dbStatus.textContent="● DATABASE ERROR";dbStatus.style.background="#4b1717";dbStatus.style.color="#ffb0b0";}console.error("Firebase connection failed",err);toast("Database connection failed: "+reason);
+  }
+}
+function renderIfData(){if(["dashboard","vehicles","history","reminders","reports"].includes(state.page))render()}
+function toast(m){const t=$("#toast");if(!t)return;t.textContent=m;t.style.display="block";clearTimeout(window._toast);window._toast=setTimeout(()=>t.style.display="none",2600)}
+function setPage(p){state.page=p;document.querySelectorAll(".nav").forEach(b=>b.classList.toggle("active",b.dataset.page===p));render()}
+document.querySelectorAll(".nav").forEach(b=>b.onclick=()=>setPage(b.dataset.page)); $("#logoutBtn").onclick=()=>toast("Logout is not required in this standalone version.");
+
+function serviceRows(e){const map={};(e?.services||[]).forEach(x=>map[x.name]=x);return SERVICES.map((n,i)=>{const x=map[n]||{};return `<div class="service-row"><div><b>${n}</b></div><input class="qty" data-i="${i}" type="number" min="0" step="1" value="${Number(x.qty||0)}"><input class="rate" data-i="${i}" type="number" min="0" step="0.01" value="${Number(x.rate||0)}"><div class="amt" id="amt-${i}">${money(x.amount||0)}</div></div>`}).join("")}
+function serviceFormHTML(){const e=state.editingRecord,val=(k,d="")=>esc(e&&e[k]!==undefined?e[k]:d),sel=v=>e?.classification===v?" selected":"";
+return `<div class="page-head"><h1>${e?"Edit Service Record":"New Service Record"}</h1></div>
+<section class="card"><h2>Customer &amp; Vehicle Details</h2><div class="grid2">
+<div><label>Service Record No.</label><input id="recordNo" value="${val("recordNo",recordNo())}" readonly></div><div><label>Date</label><input id="recordDate" type="date" value="${val("date",today())}"></div>
+<div><label>Customer Name <span class="opt">(Optional)</span></label><input id="customerName" value="${val("customerName")}" placeholder="Enter customer name"></div>
+<div><label>Mobile Number <span class="opt">(Optional)</span></label><input id="mobile" inputmode="numeric" value="${val("mobile")}" placeholder="10-digit mobile number"></div>
+<div><label>Vehicle Model <span class="req req-vehicle">*</span></label><input id="vehicleModel" list="vehicleModels" value="${val("vehicleModel")}" placeholder="Eg. Tata Nexon"><datalist id="vehicleModels">${[...new Set(state.records.map(r=>r.vehicleModel).filter(Boolean))].sort().map(x=>`<option value="${esc(x)}">`).join("")}</datalist></div>
+<div><label>Vehicle Number <span class="req req-vehicle">*</span></label><input id="vehicleNumber" list="vehicleNumbers" value="${val("vehicleNumber")}" placeholder="Eg. TN49AB1234"><datalist id="vehicleNumbers">${[...new Set(state.records.map(r=>r.vehicleNumber).filter(Boolean))].sort().map(x=>`<option value="${esc(x)}">`).join("")}</datalist><div id="vehicleDuplicateNotice" class="duplicate-notice" style="display:none"></div></div>
+<div><label>Current KM Reading <span class="req req-vehicle">*</span></label><input id="currentKm" type="number" min="0" value="${e?Number(e.currentKm||0):""}" placeholder="Enter current KM"></div>
+<div><label>Service Classification <span class="req">*</span></label><select id="classification"><option value="">Select classification</option><option${sel("Free Service")}>Free Service</option><option${sel("Wheel Alignment Service")}>Wheel Alignment Service</option><option${sel("Not Applicable")}>Not Applicable</option></select></div>
+<div><label>Technician <span class="req req-vehicle">*</span></label><select id="technician"><option value="">Select technician</option>${TECHNICIANS.map(t=>`<option value="${t}"${val("technician")===t?" selected":""}>${t}</option>`).join("")}</select></div>
+</div><p class="hint">Select an existing vehicle number to reuse customer details. For Not Applicable, customer and vehicle details are optional.</p></section>
+<section class="card"><h2>Services / Charges</h2><div class="service-table"><div class="service-head"><div>SERVICE / ITEM</div><div>QTY</div><div>RATE (₹)</div><div>AMOUNT (₹)</div></div><div id="serviceRows">${serviceRows(e)}</div></div>
+<div class="totals"><div class="total-line"><span>Subtotal</span><b id="subtotal">${money(e?.subtotal||0)}</b></div><div class="total-line"><span>Discount</span><input id="discount" type="number" min="0" step="0.01" value="${Number(e?.discount||0)}"></div><div class="total-line grand"><span>Grand Total</span><b id="grandTotal">${money(e?.total||0)}</b></div></div></section>
+<section class="card"><h2>Service Notes</h2><div class="grid2"><div><label>Customer Complaint</label><textarea id="complaint" rows="3" placeholder="Customer complaint">${val("complaint")}</textarea></div><div><label>Work Completed / Remarks</label><textarea id="workDone" rows="3" placeholder="Work completed">${val("workDone")}</textarea></div></div></section>
+<div id="saveDiagnostic" style="text-align:right;font-size:11px;color:#68778a;margin:0 0 8px"></div><div class="bottom-actions"><button class="btn" id="clearBtn">${e?"Cancel Edit":"Clear"}</button><button class="btn blue" id="printBtn" ${e?"":"disabled"}>🖨 Print Service Record</button><button class="btn green" id="whatsappBtn" disabled>💬 WhatsApp Customer</button><button class="btn blue" id="sendRecordBtn" disabled>📄 Send Service Record</button><button class="btn primary" id="saveBtn">${e?"Update Service Record":"Save Service Record"}</button></div>`}
+function getForm(){const services=SERVICES.map((name,i)=>{const qty=Number($(`.qty[data-i="${i}"]`)?.value)||0,rate=Number($(`.rate[data-i="${i}"]`)?.value)||0;return{name,qty,rate,amount:qty*rate}}).filter(x=>x.qty>0||x.rate>0);const subtotal=services.reduce((a,x)=>a+x.amount,0),discount=Math.max(0,Number($("#discount")?.value)||0);return{recordNo:$("#recordNo")?.value,date:$("#recordDate")?.value,customerName:$("#customerName")?.value.trim(),mobile:$("#mobile")?.value.trim(),vehicleModel:$("#vehicleModel")?.value.trim(),vehicleNumber:$("#vehicleNumber")?.value.trim().toUpperCase(),currentKm:Number($("#currentKm")?.value)||0,classification:$("#classification")?.value,technician:$("#technician")?.value,complaint:$("#complaint")?.value.trim(),workDone:$("#workDone")?.value.trim(),services,subtotal,discount,total:Math.max(0,subtotal-discount)}}
+function calc(){if(!$("#serviceRows"))return;const f=getForm();SERVICES.forEach((n,i)=>{$(`#amt-${i}`).textContent=money(f.services.find(s=>s.name===n)?.amount||0)});$("#subtotal").textContent=money(f.subtotal);$("#grandTotal").textContent=money(f.total)}
+function loadVehicle(){const v=$("#vehicleNumber")?.value.trim().toUpperCase();if(!v)return;const r=state.records.find(x=>x.vehicleNumber===v);if(r&&!state.editingRecord){["customerName","mobile","vehicleModel"].forEach(k=>{if($("#"+k)&&r[k])$("#"+k).value=r[k]});if($("#currentKm")&&!$("#currentKm").value)$("#currentKm").value=Number(r.currentKm||0);toast("Existing vehicle details loaded.");}}
+function updateServiceRequiredState(){
+  const na=$("#classification")?.value==="Not Applicable";
+  document.querySelectorAll(".req-vehicle").forEach(el=>el.style.display=na?"none":"inline");
+}
+
+function bindService(){
+  window._recordSavedThisForm=false;
+  document.querySelectorAll("#main input,#main select,#main textarea").forEach(el=>el.addEventListener("input",()=>{if(window._recordSavedThisForm){window._recordSavedThisForm=false;const b=$("#saveBtn");if(b){b.textContent="Save Service Record";b.disabled=false;b.onclick=saveRecord}}calc()}));
+  ["vehicleNumber"].forEach(id=>$("#"+id)?.addEventListener("change",loadVehicle));
+  $("#clearBtn").onclick=()=>{state.editingRecord=null;state.savedRecord=null;window._recordSavedThisForm=false;renderService()};
+  $("#saveBtn").onclick=saveRecord;
+  $("#printBtn").onclick=()=>state.savedRecord&&openPrint(state.savedRecord);
+  $("#whatsappBtn").onclick=()=>{if(!state.savedRecord)return;const msg=serviceCompletionMessage(state.savedRecord);if(msg)showMessageChoice(state.savedRecord,msg)};
+  $("#sendRecordBtn").onclick=()=>{if(state.savedRecord)sendServiceRecordFile(normalizeRecordForOutput(state.savedRecord))};
+  $("#classification").onchange=updateServiceRequiredState;
+  updateServiceRequiredState();
+  calc()
+}
+function startNewServiceRecord(){
+  state.editingRecord=null;
+  state.savedRecord=null;
+  window._recordSavedThisForm=false;
+  renderService();
+}
+function normalizeServices(f){
+  let raw=f?.services;
+  if(!Array.isArray(raw)) raw=f?.serviceItems;
+  if(!Array.isArray(raw)) raw=f?.items;
+  if(!Array.isArray(raw)) raw=f?.charges;
+  if(typeof raw === "string"){
+    try{ raw=JSON.parse(raw); }catch(_){ raw=[]; }
+  }
+  if(raw && !Array.isArray(raw) && typeof raw === "object"){
+    raw=Object.entries(raw).map(([k,v])=>({name:v?.name||v?.service||v?.description||k,qty:v?.qty??v?.quantity,rate:v?.rate??v?.price,amount:v?.amount}));
+  }
+  if(!Array.isArray(raw)) raw=[];
+  return raw.map((x,i)=>{
+    const name=String(x?.name??x?.service??x?.description??x?.item??SERVICES[i]??"").trim();
+    const qty=Number(x?.qty??x?.quantity??0)||0;
+    const rate=Number(x?.rate??x?.price??0)||0;
+    const amount=Number(x?.amount);
+    return {name,qty,rate,amount:Number.isFinite(amount)?amount:qty*rate};
+  }).filter(x=>x.qty>0||x.rate>0||x.amount>0);
+}
+function captureLiveServices(){
+  try{
+    const rows=[...document.querySelectorAll('#serviceRows .service-row')];
+    const direct=rows.map((row,i)=>{
+      const name=(row.querySelector('b')?.textContent||SERVICES[i]||'').trim();
+      const q=Number(row.querySelector('.qty')?.value)||0;
+      const r=Number(row.querySelector('.rate')?.value)||0;
+      return {name,qty:q,rate:r,amount:q*r};
+    }).filter(x=>x.qty>0||x.rate>0);
+    if(direct.length)return direct;
+    return SERVICES.map((name,i)=>{
+      const q=Number(document.querySelector(`.qty[data-i="${i}"]`)?.value)||0;
+      const r=Number(document.querySelector(`.rate[data-i="${i}"]`)?.value)||0;
+      return {name,qty:q,rate:r,amount:q*r};
+    }).filter(x=>x.qty>0||x.rate>0);
+  }catch(e){return [];}
+}
+function normalizeRecordForOutput(f){
+  const r={...(f||{})};
+  let services=[];
+  // 1) Dedicated immutable snapshot captured at save time.
+  if(r.serviceSnapshot){
+    try{ services=normalizeServices({services:JSON.parse(r.serviceSnapshot)}); }catch(_){ }
+  }
+  // 2) Saved service array / legacy structures.
+  if(!services.length) services=normalizeServices(r);
+  // 3) Last-resort: read the live form while the Service Record page is open.
+  if(!services.length) services=captureLiveServices();
+  r.services=services;
+  r.serviceItems=services.map(x=>({...x}));
+  r.serviceSnapshot=JSON.stringify(services);
+  r.subtotal=services.reduce((a,x)=>a+Number(x.amount||0),0);
+  r.discount=Math.max(0,Number(r.discount)||0);
+  r.total=Math.max(0,r.subtotal-r.discount);
+  return r;
+}
+async function makeServicePDF(f){
+  f={...(f||{})};
+  let services=normalizeServices(f);
+  if(!services.length && f.serviceSnapshot){try{services=normalizeServices({services:JSON.parse(f.serviceSnapshot)});}catch(_){}}
+  if(!services.length)services=captureLiveServices();
+  f.services=services;
+  f.subtotal=services.reduce((a,x)=>a+(Number(x.amount)||0),0);
+  f.discount=Math.max(0,Number(f.discount)||0);
+  f.total=Math.max(0,f.subtotal-f.discount);
+  const jsPDF=window.jspdf?.jsPDF;if(!jsPDF)throw new Error("PDF library unavailable");
+  const doc=new jsPDF({unit:"mm",format:"a4",compress:true});
+  const blue=[8,121,201],navy=[7,24,39],yellow=[255,210,26],light=[246,251,255],line=[185,205,226],text=[23,34,53],muted=[101,117,135];
+  const rs=n=>`Rs. ${(Number(n)||0).toLocaleString("en-IN",{minimumFractionDigits:2,maximumFractionDigits:2})}`;
+  doc.setFillColor(...navy);doc.rect(0,0,210,13,"F");doc.setTextColor(255,255,255);doc.setFontSize(15);doc.setFont(undefined,"bold");doc.text(SHOP.name,12,9);
+  doc.setTextColor(...blue);doc.setFontSize(10);doc.text(SHOP.sub,12,20);doc.setTextColor(...muted);doc.setFontSize(8);doc.setFont(undefined,"normal");doc.text(SHOP.address,12,26);doc.text(SHOP.phone,12,41);
+  doc.setFillColor(...yellow);doc.rect(157,16,41,9,"F");doc.setTextColor(20,30,40);doc.setFontSize(9);doc.setFont(undefined,"bold");doc.text("SERVICE RECORD",161,22);doc.setFont(undefined,"normal");doc.setFontSize(8);doc.text(`Record No: #${f.recordNo||"—"}`,157,30);doc.text(`Date: ${f.date||"—"}`,157,35);
+  let y=48;doc.setDrawColor(...line);doc.setFillColor(...light);doc.roundedRect(12,y,90,37,2,2,"FD");doc.roundedRect(108,y,90,37,2,2,"FD");doc.setTextColor(...blue);doc.setFontSize(7);doc.setFont(undefined,"bold");doc.text("CUSTOMER INFORMATION",16,y+6);doc.text("VEHICLE & SERVICE DETAILS",112,y+6);
+  doc.setTextColor(...text);doc.setFontSize(8);doc.setFont(undefined,"normal");doc.text(`Customer Name: ${f.customerName||"—"}`,16,y+13);doc.text(`Mobile No.: ${f.mobile||"—"}`,16,y+19);doc.text(`Vehicle Model: ${f.vehicleModel||"—"}`,112,y+13);doc.text(`Vehicle Reg. No.: ${f.vehicleNumber||"—"}`,112,y+19);doc.text(`Current KM: ${f.currentKm?Number(f.currentKm).toLocaleString("en-IN")+" KM":"—"}`,112,y+25);doc.text(`Service Type: ${f.classification||"—"}`,112,y+31);doc.text(`Technician: ${f.technician||"—"}`,112,y+37);
+  y=88;doc.setFillColor(...navy);doc.rect(12,y,186,9,"F");doc.setTextColor(255,255,255);doc.setFontSize(7);doc.setFont(undefined,"bold");doc.text("S.NO",15,y+6);doc.text("SERVICE / ITEM DESCRIPTION",28,y+6);doc.text("QTY",142,y+6);doc.text("RATE",158,y+6);doc.text("AMOUNT",178,y+6);
+  doc.setFont(undefined,"normal");doc.setFontSize(8);doc.setTextColor(...text);if(!services.length)services=[{name:"—",qty:"",rate:0,amount:0}];
+  for(let i=0;i<services.length;i++){const x=services[i];y+=9;doc.setDrawColor(220,228,235);doc.line(12,y+3,198,y+3);doc.setTextColor(...text);doc.text(String(i+1),15,y);doc.text(String(x.name||""),28,y);doc.text(String(x.qty??0),143,y,{align:"center"});doc.text((Number(x.rate)||0).toFixed(2),158,y);doc.text((Number(x.amount)||0).toFixed(2),180,y);}
+  y=Math.max(y+14,145);doc.setTextColor(...blue);doc.setFontSize(8);doc.setFont(undefined,"bold");doc.text("REMARKS",12,y);doc.setTextColor(...muted);doc.setFont(undefined,"normal");doc.setFontSize(8);doc.text(doc.splitTextToSize(f.workDone||"This document is a service record.",120),12,y+6);
+  const tx=145;doc.setDrawColor(...line);doc.rect(tx,y-4,53,29);doc.setTextColor(...muted);doc.setFontSize(8);doc.text("Subtotal",tx+4,y+2);doc.text(rs(f.subtotal),tx+49,y+2,{align:"right"});doc.text("Discount",tx+4,y+9);doc.text(rs(f.discount),tx+49,y+9,{align:"right"});doc.setFillColor(...navy);doc.rect(tx,y+15,53,10,"F");doc.setTextColor(255,255,255);doc.setFont(undefined,"bold");doc.text("Grand Total",tx+4,y+21);doc.text(rs(f.total),tx+49,y+21,{align:"right"});
+  if(f.classification!=="Not Applicable"){y+=39;doc.setFillColor(...blue);doc.rect(12,y,186,9,"F");doc.setTextColor(255,255,255);doc.setFontSize(8);doc.text("NEXT SERVICE SCHEDULE",78,y+6);y+=16;doc.setTextColor(...blue);doc.setFont(undefined,"bold");doc.text("FREE SERVICE",25,y);doc.setTextColor(...text);doc.setFontSize(10);doc.text(`${(Number(f.currentKm||0)+2000).toLocaleString("en-IN")} KM`,25,y+7);doc.setTextColor(...muted);doc.setFontSize(7);doc.setFont(undefined,"normal");doc.text("OR within 1 month, whichever comes first.",25,y+13);doc.setTextColor(...blue);doc.setFontSize(8);doc.setFont(undefined,"bold");doc.text("NEXT PAID WHEEL ALIGNMENT SERVICE",112,y);doc.setTextColor(...text);doc.setFontSize(10);doc.text(`${(Number(f.currentKm||0)+5000).toLocaleString("en-IN")} KM`,112,y+7);}
+  doc.setTextColor(...muted);doc.setFontSize(7);doc.setFont(undefined,"normal");doc.text("For SRI HARI TYRES — Authorised Signatory",145,278,{align:"center"});doc.setTextColor(...blue);doc.setFontSize(9);doc.setFont(undefined,"bold");doc.text("Thank you for choosing Sri Hari Tyres.",105,286,{align:"center"});return doc;
+}
+async function sendServiceRecordFile(f){
+  try{
+    if(document.getElementById("serviceRows")){const live=getForm();f={...(f||{}),...live};f.services=captureLiveServices();f.serviceSnapshot=JSON.stringify(f.services.map(x=>({...x})));}
+    const doc=await makeServicePDF(f),blob=doc.output("blob"),file=new File([blob],`Sri_Hari_Tyres_Service_Record_${f.recordNo}.pdf`,{type:"application/pdf"});
+    if(navigator.share&&(!navigator.canShare||navigator.canShare({files:[file]}))){await navigator.share({title:`Sri Hari Tyres Service Record #${f.recordNo}`,text:`Sri Hari Tyres Service Record #${f.recordNo}`,files:[file]});}
+    else{const url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=file.name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),3000);toast("PDF created. Choose WhatsApp from the share sheet to send it.");}
+  }catch(e){if(e?.name!=="AbortError")alert("Could not prepare the Service Record PDF: "+(e?.message||"Unknown error"));}
+}
+function serviceCompletionMessage(f){
+ const name=f.customerName||"Customer";
+ const km=Number(f.currentKm).toLocaleString("en-IN");
+ if(f.classification==="Free Service") return `SRI HARI TYRES | SERVICE UPDATE\n\nDear ${name},\n\nYour Free Service for vehicle ${f.vehicleNumber} has been successfully completed at ${km} KM.\n\nThank you for choosing SRI HARI TYRES and for your continued trust. 🙏\n\n${SHOP.name}\n${SHOP.sub}\n📍 ${SHOP.address.join("\n   ")}\n☎️ ${SHOP.phone}`;
+ if(f.classification!=="Wheel Alignment Service"&&f.classification!=="Regular Service") return null;
+ const freeKm=(f.currentKm+2000).toLocaleString("en-IN");
+ const paidKm=(f.currentKm+5000).toLocaleString("en-IN");
+ return `SRI HARI TYRES | SERVICE UPDATE\n\nDear ${name},\n\nYour Wheel Alignment Service for vehicle ${f.vehicleNumber} has been successfully completed at ${km} KM.\n\n📋 NEXT SERVICE SCHEDULE\n\n🟢 Free Service\n${freeKm} KM OR within 1 month, whichever comes first.\n\n🔵 Next Paid Wheel Alignment Service\n${paidKm} KM\n\nThank you for choosing SRI HARI TYRES and for your continued trust. 🙏\n\n${SHOP.name}\n${SHOP.sub}\n📍 ${SHOP.address.join("\n   ")}\n☎️ ${SHOP.phone}`;
+}
+function openWhatsApp(f,text){const p=normalizePhone(f.mobile);if(!p||!text){toast(p?"No message available.":"Mobile number is missing.");return}window.open(`https://wa.me/91${p}?text=${encodeURIComponent(text)}`,"_blank")}
+async function saveRecord(){
+  const btn=document.getElementById("saveBtn");
+  if(!btn || btn.disabled)return;
+  if(!fbReady){
+    alert("DATABASE IS NOT CONNECTED. Please wait until the green LIVE DATABASE CONNECTED status appears.");
+    return;
+  }
+
+  const f=getForm();
+  f.classification=String(f.classification||"").trim();
+  const notApplicable=f.classification==="Not Applicable";
+
+  if(!f.classification){ alert("Please select Service Classification."); return; }
+  if(!notApplicable && (!f.vehicleModel||!f.vehicleNumber||!f.currentKm)){
+    alert("Please enter Vehicle Model, Vehicle Number and Current KM."); return;
+  }
+  if(f.mobile && normalizePhone(f.mobile).length!==10){
+    alert("Please enter a valid 10-digit mobile number."); return;
+  }
+  if(!f.services.length){ alert("Please enter at least one service or charge."); return; }
+
+  btn.disabled=true;
+  const oldText=btn.textContent;
+  btn.textContent="Saving…";
+
+  const id=state.editingRecord?.id || makeKey();
+  const data={
+    ...f,
+    // Immutable copy of exactly what was entered in the service rows.
+    serviceSnapshot:JSON.stringify(f.services.map(x=>({...x}))),
+    firebaseKey:id,
+    savedAt:state.editingRecord?.savedAt || new Date().toISOString(),
+    updatedAt:new Date().toISOString()
+  };
+
+  try{
+    const url=fbUrl("serviceRecords/"+encodeURIComponent(id));
+    const controller=new AbortController();
+    const timeout=setTimeout(()=>controller.abort(),12000);
+    const response=await fetch(url,{
+      method:"PUT",
+      mode:"cors",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify(data),
+      signal:controller.signal,
+      cache:"no-store"
+    });
+    clearTimeout(timeout);
+
+    if(!response.ok){
+      let detail="";
+      try{detail=await response.text()}catch(_){}
+      throw new Error("Firebase HTTP "+response.status+(detail?" — "+detail:""));
+    }
+
+    const saved=await response.json();
+    state.savedRecord={id,...data};
+    state.editingRecord=null;
+    window._recordSavedThisForm=true;
+
+    ["printBtn","whatsappBtn","sendRecordBtn"].forEach(x=>{
+      const el=document.getElementById(x); if(el)el.disabled=false;
+    });
+
+    // Firebase has confirmed the write. Never leave the button in "Saving…".
+    // Lock this form to prevent an accidental second save/duplicate.
+    btn.disabled=true;
+    btn.textContent="✓ Service Record Saved";
+    btn.classList.add("saved-state");
+    showSaved(f.recordNo,false);
+    toast("Service record saved successfully.");
+  }catch(e){
+    console.error("SAVE ERROR",e);
+    const reason=e?.name==="AbortError" ? "Firebase write timed out after 12 seconds." : e.message;
+    alert("SERVICE RECORD NOT SAVED\n\n"+reason+"\n\nPlease send me a screenshot of this message.");
+    btn.disabled=false;
+    btn.textContent=oldText;
+  }
+}
+function showSaved(no,isUpdate){
+ const saveButton=document.getElementById("saveBtn");
+ if(saveButton){saveButton.disabled=true;saveButton.textContent=isUpdate?"✓ Service Record Updated":"✓ Service Record Saved";saveButton.classList.add("saved-state");}
+ const box=$("#saveStatus");
+ box.innerHTML=`<div class="save-box"><div class="save-icon">✅</div><h3>Service Record ${isUpdate?"Updated":"Saved"}</h3><p>Record No: <b>#${esc(no)}</b><br>Saved successfully to the live database.</p><button id="savedOk">OK</button></div>`;
+ box.style.display="flex";
+ $("#savedOk").onclick=()=>{box.style.display="none";const b=document.getElementById("saveBtn");if(b){b.disabled=true;b.textContent=isUpdate?"✓ Service Record Updated":"✓ Service Record Saved";b.classList.add("saved-state");}};
+}
+function showMessageChoice(f,msg){const box=$("#saveStatus");box.innerHTML=`<div class="save-box"><div class="save-icon">💬</div><h3>WhatsApp Message</h3><p>Review the message below before opening WhatsApp.</p><div class="message-preview">${esc(msg).replace(/\n/g,"<br>")}</div><div class="choice-row"><button class="btn" id="msgClose">Cancel</button><button class="btn green" id="msgWhatsApp">Open WhatsApp</button></div></div>`;box.style.display="flex";$("#msgClose").onclick=()=>box.style.display="none";$("#msgWhatsApp").onclick=()=>{box.style.display="none";openWhatsApp(f,msg)}}
+
+function createIndependentReminders(r){const base={vehicleNumber:r.vehicleNumber,customerName:r.customerName||"",mobile:r.mobile||"",sourceServiceId:r.id,createdAt:new Date().toISOString()};if(!fbReady)throw new Error("Firebase database is not connected.");const {push,set}=window.firebaseFns;const a=push(remindersRef),b=push(remindersRef);return Promise.all([set(a,{...base,type:"Free Service",dueDate:addDays(r.date,28),dueKm:Number(r.currentKm||0)+2000,status:"pending"}),set(b,{...base,type:"Wheel Alignment Service",dueDate:addMonths(r.date,2),dueKm:Number(r.currentKm||0)+5000,status:"pending"})])}
+async function syncRemindersForRecord(r){const matches=state.reminders.filter(x=>x.sourceServiceId===r.id);const {ref,remove}=window.firebaseFns;for(const x of matches)await remove(ref(db,`reminders/${x.id}`));if((r.classification==="Wheel Alignment Service"||r.classification==="Regular Service"))await createIndependentReminders(r)}
+function reminderText(x){
+ const name=x.customerName||"Customer";
+ if(x.type==="Free Service") return `SRI HARI TYRES | SERVICE REMINDER\n\nDear ${name},\n\nYour vehicle ${x.vehicleNumber} is now due for its Free Service.\n\n🟢 Free Service Due\n${Number(x.dueKm).toLocaleString("en-IN")} KM\n\n📅 Reminder Date\n${prettyDate(x.dueDate)}\n\nPlease visit SRI HARI TYRES at your convenience to avail your Free Service.\n\nThank you for choosing SRI HARI TYRES and for your continued trust. 🙏\n\n${SHOP.name}\n${SHOP.sub}\n📍 ${SHOP.address.join("\n   ")}\n☎️ ${SHOP.phone}`;
+ return `SRI HARI TYRES | SERVICE REMINDER\n\nDear ${name},\n\nYour vehicle ${x.vehicleNumber} is now due for its Wheel Alignment Service.\n\n🔵 Wheel Alignment Service\n📅 Reminder Date\n${prettyDate(x.dueDate)}\n\nPlease visit SRI HARI TYRES at your convenience for your Wheel Alignment Service.\n\nThank you for choosing SRI HARI TYRES and for your continued trust. 🙏\n\n${SHOP.name}\n${SHOP.sub}\n📍 ${SHOP.address.join("\n   ")}\n☎️ ${SHOP.phone}`;
+}
+async function sendReminder(x){const text=reminderText(x);openWhatsApp(x,text);const {ref,set}=window.firebaseFns;await set(ref(db,`reminders/${x.id}`),{...x,status:"sent",sentAt:new Date().toISOString()});toast("Reminder marked as sent and removed from pending reminders.")}
+
+function printHTML(f){f=normalizeRecordForOutput(f);const rows=(f.services?.length?f.services:[{name:"—",qty:"",rate:0,amount:0}]).map((x,i)=>`<tr><td>${i+1}</td><td><b>${esc(x.name)}</b></td><td>${x.qty}</td><td>${Number(x.rate).toFixed(2)}</td><td>${Number(x.amount).toFixed(2)}</td></tr>`).join("");const schedule=f.classification==="Not Applicable"?"":((f.classification==="Wheel Alignment Service"||f.classification==="Regular Service")?`<div class="schedule"><div><b>FREE SERVICE</b><strong>${(f.currentKm+2000).toLocaleString("en-IN")} KM</strong><span>OR within 1 month, whichever comes first.</span></div><div><b>NEXT PAID WHEEL ALIGNMENT SERVICE</b><strong>${(f.currentKm+5000).toLocaleString("en-IN")} KM</strong></div></div>`:`<div class="schedule single"><div><b>FREE SERVICE COMPLETED</b><strong>${Number(f.currentKm).toLocaleString("en-IN")} KM</strong><span>Service completed successfully.</span></div></div>`);return `<!doctype html><html><head><title>Service Record #${esc(f.recordNo)}</title><style>*{box-sizing:border-box}body{margin:0;background:#fff;font-family:Arial,sans-serif;color:#172235}.sheet{width:760px;margin:0 auto;padding:26px 30px}.top{display:flex;justify-content:space-between;border-bottom:3px solid #0879c9;padding-bottom:10px}.brand{font-size:30px;font-weight:900;color:#06447b}.sub{font-size:11px;color:#0879c9;font-weight:900;letter-spacing:1px;margin-top:4px}.addr{font-size:10px;line-height:1.55;color:#5e6c7c;margin-top:7px}.tag{background:#ffd21a;padding:10px 13px;font-weight:900;font-size:14px}.meta{font-size:10px;text-align:right;margin-top:7px;color:#5e6c7c}.boxes{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:17px}.box{border:1px solid #b9cde2;border-radius:7px;padding:12px;background:#f6fbff}.box h3{font-size:9px;letter-spacing:1px;color:#06447b;margin:0 0 9px;border-bottom:1px solid #d8e3eb;padding-bottom:6px}.kv{display:grid;grid-template-columns:115px 1fr;gap:6px;font-size:10px}.kv span{color:#667586}.kv b{color:#172235}table{width:100%;border-collapse:collapse;margin-top:17px;font-size:10px}th{background:#071827;color:#fff;padding:9px;text-align:left}td{padding:10px 8px;border-bottom:1px solid #dde5eb}th:nth-child(n+3),td:nth-child(n+3){text-align:right}td:first-child,th:first-child{text-align:center}.lower{display:grid;grid-template-columns:1fr 250px;gap:18px;margin-top:15px}.remarks{border:1px solid #b9cde2;border-radius:7px;padding:12px;background:#f6fbff}.remarks h3{font-size:10px;color:#06447b;margin:0 0 8px}.remarks p{font-size:9px;color:#657587;line-height:1.55;margin:4px 0}.tot{border:1px solid #d5e0e8}.line{display:flex;justify-content:space-between;padding:9px 10px;font-size:10px;color:#657587}.grand{background:#071827;color:#fff;font-size:14px;font-weight:900}.sign{display:flex;justify-content:flex-end;margin-top:32px;font-size:9px;font-weight:900}.sign div{width:220px;text-align:center;border-top:1px dashed #9eacb8;padding-top:7px}.schedule-wrap{margin-top:28px;border:1px solid #b9cde2;border-radius:7px;overflow:hidden}.schedule-title{background:#0879c9;color:#fff;text-align:center;font-size:13px;font-weight:900;padding:9px}.schedule{display:grid;grid-template-columns:1fr 1fr}.schedule.single{grid-template-columns:1fr}.schedule>div{padding:15px;text-align:center;border-right:1px solid #d5e0e8}.schedule>div:last-child{border-right:0}.schedule b{display:block;color:#06447b;font-size:11px}.schedule strong{display:block;font-size:17px;margin:7px 0}.schedule span{font-size:10px;color:#657587}.note{background:#fff9df;padding:9px;text-align:center;font-size:9px}.thank{margin-top:14px;text-align:center;font-size:12px;font-weight:900;color:#0879c9;background:#e9f7ff;border:1px solid #bfe4f7;padding:10px}.footer{margin-top:12px;text-align:center;font-size:9px;color:#657587}@media print{.sheet{width:100%;padding:12mm}body{print-color-adjust:exact;-webkit-print-color-adjust:exact}}</style></head><body><div class="sheet"><div class="top"><div><div class="brand">${SHOP.name}</div><div class="sub">${SHOP.sub}</div><div class="addr">${SHOP.address.join("<br>")}<br>${SHOP.phone}</div></div><div><div class="tag">SERVICE RECORD</div><div class="meta">Service Record No: <b>#${esc(f.recordNo)}</b><br>Date: <b>${esc(f.date)}</b></div></div></div><div class="boxes"><div class="box"><h3>CUSTOMER INFORMATION</h3><div class="kv"><span>Customer Name:</span><b>${esc(f.customerName||"—")}</b><span>Mobile No.:</span><b>${esc(f.mobile||"—")}</b></div></div><div class="box"><h3>VEHICLE &amp; SERVICE DETAILS</h3><div class="kv"><span>Vehicle Model:</span><b>${esc(f.vehicleModel)}</b><span>Vehicle Reg. No.:</span><b>${esc(f.vehicleNumber)}</b><span>Current KM:</span><b>${Number(f.currentKm).toLocaleString("en-IN")} KM</b><span>Service Type:</span><b>${esc(f.classification)}</b><span>Technician:</span><b>${esc(f.technician||"—")}</b></div></div></div><table><thead><tr><th>S.NO</th><th>SERVICE / ITEM DESCRIPTION</th><th>QTY</th><th>RATE (₹)</th><th>AMOUNT (₹)</th></tr></thead><tbody>${rows}</tbody></table><div class="lower"><div class="remarks"><h3>REMARKS</h3><p>1. ${esc(f.workDone||"This document is a service record.")}</p><p>2. Services are performed using calibrated and computerized equipment where applicable.</p></div><div class="tot"><div class="line"><span>Subtotal</span><b>${money(f.subtotal)}</b></div><div class="line"><span>Discount</span><b>${money(f.discount)}</b></div><div class="line grand"><span>Grand Total</span><b>${money(f.total)}</b></div></div></div><div class="sign"><div>For SRI HARI TYRES<br>(Authorized Signatory)</div></div>${f.classification!=="Not Applicable"?`<div class="schedule-wrap"><div class="schedule-title">NEXT SERVICE SCHEDULE</div>${schedule}<div class="note"><b>Note:</b> Please bring this Service Record during your next visit.</div></div>`:""}<div class="thank">Thank you for choosing Sri Hari Tyres.<br><span>We appreciate your continued trust.</span></div><div class="footer">${SHOP.address.join(" • ")} &nbsp; | &nbsp; ${SHOP.phone} &nbsp; | &nbsp; Drive Safe, Stay Safe</div></div><script>window.onload=()=>setTimeout(()=>window.print(),250)<\/script></body></html>`}
+function openPrint(f){
+  f=normalizeRecordForOutput(f);const html=printHTML(f);let w=null;try{w=window.open("","_blank","width=900,height=1200")}catch(e){}if(w){w.document.open();w.document.write(html);w.document.close();setTimeout(()=>{try{w.focus();w.print()}catch(e){}},500);return}let host=$("#printHost");if(!host){host=document.createElement("div");host.id="printHost";document.body.appendChild(host)}const doc=new DOMParser().parseFromString(html,"text/html"),sheet=doc.querySelector(".sheet");if(!sheet){alert("Could not prepare the service record for printing.");return}host.innerHTML="";host.appendChild(document.importNode(sheet,true));setTimeout(()=>window.print(),120)}
+window.addEventListener("afterprint",()=>{const h=$("#printHost");if(h)h.innerHTML=""});
+
+function startOfWeek(){const d=new Date(),day=d.getDay(),diff=day===0?6:day-1;d.setDate(d.getDate()-diff);return d.toISOString().slice(0,10)}
+function firstOfMonth(){const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-01`}
+function filterBar(prefix,defaultsToday=true){const f=defaultsToday?today():"0000-01-01",t=defaultsToday?today():"9999-12-31";return `<div class="filterbar"><div><label>From Date</label><input id="${prefix}From" type="date" value="${f}"></div><div><label>To Date</label><input id="${prefix}To" type="date" value="${t}"></div><div class="filter-actions"><button class="btn blue" id="${prefix}Apply">Apply</button><button class="btn" id="${prefix}Clear">Clear</button></div></div><div class="quick-filters"><button data-qfilter="${prefix}:today">Today</button><button data-qfilter="${prefix}:week">This Week</button><button data-qfilter="${prefix}:month">This Month</button><button data-qfilter="${prefix}:all">All</button></div>`}
+function bindDateFilter(prefix,cb){$(`#${prefix}Apply`).onclick=()=>{const f=$(`#${prefix}From`).value,t=$(`#${prefix}To`).value;if(f&&t&&f>t){alert("From Date cannot be after To Date.");return}cb(f,t)};$(`#${prefix}Clear`).onclick=()=>{const d=today();$(`#${prefix}From`).value=d;$(`#${prefix}To`).value=d;cb(d,d)};document.querySelectorAll(`[data-qfilter^="${prefix}:"]`).forEach(b=>b.onclick=()=>{const m=b.dataset.qfilter.split(":")[1];let f=today(),t=today();if(m==="week")f=startOfWeek();if(m==="month")f=firstOfMonth();if(m==="all"){f="0000-01-01";t="9999-12-31"}$(`#${prefix}From`).value=f;$(`#${prefix}To`).value=t;cb(f,t)})}
+function vehicleHistory(vehicleNumber){return state.records.filter(r=>String(r.vehicleNumber||'').toUpperCase()===String(vehicleNumber||'').toUpperCase()).sort((a,b)=>(b.date||'').localeCompare(a.date||'')||(b.savedAt||'').localeCompare(a.savedAt||''))}
+function latestAlignmentRecord(vehicleNumber){return vehicleHistory(vehicleNumber).find(r=>r.classification==='Wheel Alignment Service'||r.classification==='Regular Service')||null}
+function vehicleProfileData(vehicleNumber){const h=vehicleHistory(vehicleNumber),latest=h[0]||null,align=latestAlignmentRecord(vehicleNumber),free=align?Number(align.currentKm||0)+2000:null,paid=align?Number(align.currentKm||0)+5000:null,current=latest?Number(latest.currentKm||0):0;return {h,latest,align,free,paid,current}}
+function kmProgress(current,target){if(!target||!current)return {pct:0,remaining:target?Math.max(0,target-current):0};const base=Math.max(0,target-5000),span=Math.max(1,target-base),pct=Math.min(100,Math.max(0,((current-base)/span)*100));return {pct,remaining:Math.max(0,target-current)}}
+function customerReturnRate(){const map={};state.records.forEach(r=>{const v=String(r.vehicleNumber||'').trim().toUpperCase();if(v)map[v]=(map[v]||0)+1});const vehicles=Object.keys(map);const returning=vehicles.filter(v=>map[v]>1).length;return {vehicles,returning,rate:vehicles.length?Math.round(returning/vehicles.length*100):0}}
+function reminderPriority(x){const now=today(),due=x.dueDate<=now;if(due)return {label:'DUE NOW',cls:'due'};const d=new Date(x.dueDate+'T00:00:00'),n=new Date(now+'T00:00:00'),days=Math.ceil((d-n)/86400000);if(days<=7)return {label:`DUE IN ${days}D`,cls:'soon'};return {label:'UPCOMING',cls:'ok'}}
+async function oneTapCustomerPackage(r){if(!r)return;try{const doc=await makeServicePDF(r),blob=doc.output('blob'),file=new File([blob],`Sri_Hari_Tyres_Service_Record_${r.recordNo}.pdf`,{type:'application/pdf'}),text=serviceCompletionMessage(r)||'';if(navigator.share&&(!navigator.canShare||navigator.canShare({files:[file]}))){await navigator.share({title:`Sri Hari Tyres Service Record #${r.recordNo}`,text,files:[file]});toast('Customer package ready to share.')}else{const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=file.name;a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);toast('PDF created. Use WhatsApp Customer for the message.')}}catch(e){if(e?.name!=='AbortError')alert('Could not prepare the customer package: '+(e?.message||'Unknown error'))}}
+function vehicleProfileHTML(r){const d=vehicleProfileData(r.vehicleNumber),p=kmProgress(d.current,d.free),q=kmProgress(d.current,d.paid);const h=d.h;return `<div class="profile-panel"><div class="profile-top"><div><div class="profile-title">🚗 ${esc(r.vehicleNumber)}</div><div class="profile-sub">${esc(r.vehicleModel||d.latest?.vehicleModel||'Vehicle')} • ${h.length} service record(s)</div></div><div class="profile-actions"><button class="btn blue" data-package="${esc(r.vehicleNumber)}">📦 Customer Package</button><button class="btn" data-profile-history="${esc(r.vehicleNumber)}">View Full History</button></div></div><div class="profile-grid"><div class="profile-box"><span>Customer</span><b>${esc(r.customerName||d.latest?.customerName||'—')}</b></div><div class="profile-box"><span>Mobile</span><b>${esc(r.mobile||d.latest?.mobile||'—')}</b></div><div class="profile-box"><span>Current KM</span><b>${d.current?d.current.toLocaleString('en-IN')+' KM':'—'}</b></div><div class="profile-box"><span>Last Service</span><b>${prettyDate(d.latest?.date)}</b></div></div>${d.align?`<div class="km-card"><div class="km-head"><b>📈 KM Progress Tracker</b><span>Last alignment: ${Number(d.align.currentKm||0).toLocaleString('en-IN')} KM</span></div><div class="progress-item"><div><b>Free Service</b><span>${d.free.toLocaleString('en-IN')} KM</span></div><div class="progress"><i style="width:${p.pct}%"></i></div><small>${p.remaining.toLocaleString('en-IN')} KM remaining</small></div><div class="progress-item"><div><b>Paid Wheel Alignment</b><span>${d.paid.toLocaleString('en-IN')} KM</span></div><div class="progress"><i style="width:${q.pct}%"></i></div><small>${q.remaining.toLocaleString('en-IN')} KM remaining</small></div></div>`:''}<div class="timeline"><h4>🚗 Vehicle Service Timeline</h4>${h.slice(0,8).map(x=>`<div class="timeline-item"><div class="timeline-dot"></div><div><b>${prettyDate(x.date)} • ${Number(x.currentKm||0).toLocaleString('en-IN')} KM</b><span>${esc(x.classification||'Service')} • ${esc(x.technician||'—')}</span><small>${(x.services||[]).map(y=>esc(y.name)).join(', ')||'No service items'}</small></div></div>`).join('')}</div></div>`}
+
+function renderDashboard(){const arr=state.records.filter(r=>r.date===today()),value=arr.reduce((a,r)=>a+Number(r.total||0),0),rem=state.reminders.filter(r=>r.dueDate===today()).length;$("#main").innerHTML=`<div class="hero"><h1>Smart Service Dashboard</h1><div>Today's service activity — ${prettyDate(today())}</div></div><div class="stat-grid"><div class="stat"><div class="label">TODAY'S VEHICLES</div><div class="num">${new Set(arr.map(r=>r.vehicleNumber).filter(Boolean)).size}</div></div><div class="stat"><div class="label">TODAY'S SERVICES</div><div class="num">${arr.length}</div></div><div class="stat"><div class="label">TODAY'S VALUE</div><div class="num">${money(value)}</div></div><div class="stat"><div class="label">CUSTOMER RETURN RATE</div><div class="num">${customerReturnRate().rate}%</div></div></div><section class="card"><div class="page-head"><h2>Today's Service Records</h2><button class="btn primary" id="dashNew">+ New Service</button></div>${arr.length?historyRows(arr,false):'<div class="empty">No service records for today.</div>'}</section>`;$("#dashNew").onclick=()=>setPage("service")}
+function renderVehicles(){const latest={};state.records.filter(r=>r.date===today()).forEach(r=>{if(r.vehicleNumber&&!latest[r.vehicleNumber])latest[r.vehicleNumber]=r});const all=Object.values(latest),models=[...new Set(state.records.map(r=>r.vehicleModel).filter(Boolean))].sort();$("#main").innerHTML=`<div class="page-head"><h1>Vehicles</h1><button class="btn primary" id="newVehicleRecord">+ Service Record</button></div><section class="card"><div class="filterbar vehicle-filterbar"><div><label>Search</label><input id="vehicleSearch" placeholder="Vehicle, customer, mobile or model"></div><div><label>From Date</label><input id="vehicleFrom" type="date" value="${today()}"></div><div><label>To Date</label><input id="vehicleTo" type="date" value="${today()}"></div><div class="filter-actions"><button class="btn blue" id="vehicleApply">Apply</button><button class="btn" id="vehicleClear">Clear</button></div></div><div class="quick-filters"><button id="vehicleToday">Today</button><button id="vehicleWeek">This Week</button><button id="vehicleMonth">This Month</button><button id="vehicleAll">All</button></div><div class="grid2"><div><label>Vehicle Model</label><select id="vehicleModelFilter"><option value="">All Models</option>${models.map(m=>`<option>${esc(m)}</option>`).join("")}</select></div><div><label>Service Type</label><select id="vehicleClassFilter"><option>All Services</option><option>Free Service</option><option>Wheel Alignment Service</option><option>Not Applicable</option></select></div></div><div class="result-bar"><b id="vehicleCount">${all.length} vehicle(s)</b><span>Default: today's vehicles</span></div><div id="vehicleList">${vehicleRows(all)}</div></section>`;const paint=(f=today(),t=today())=>{let src=dateFiltered(state.records,f,t),map={};src.forEach(r=>{if(r.vehicleNumber&&!map[r.vehicleNumber])map[r.vehicleNumber]=r});let arr=Object.values(map),q=$("#vehicleSearch").value.toLowerCase().trim(),m=$("#vehicleModelFilter").value,c=$("#vehicleClassFilter").value;arr=arr.filter(r=>[r.vehicleNumber,r.customerName,r.mobile,r.vehicleModel].join(" ").toLowerCase().includes(q)&&(!m||r.vehicleModel===m)&&(c==="All Services"||state.records.some(x=>x.vehicleNumber===r.vehicleNumber&&(x.classification===c|| (c==="Wheel Alignment Service"&&x.classification==="Regular Service")))));$("#vehicleCount").textContent=`${arr.length} vehicle(s)`;$("#vehicleList").innerHTML=vehicleRows(arr)};$("#newVehicleRecord").onclick=()=>setPage("service");$("#vehicleApply").onclick=()=>paint($("#vehicleFrom").value,$("#vehicleTo").value);$("#vehicleClear").onclick=()=>{const d=today();$("#vehicleFrom").value=d;$("#vehicleTo").value=d;$("#vehicleSearch").value="";paint(d,d)};$("#vehicleSearch").oninput=()=>paint($("#vehicleFrom").value,$("#vehicleTo").value);$("#vehicleModelFilter").onchange=()=>paint($("#vehicleFrom").value,$("#vehicleTo").value);$("#vehicleClassFilter").onchange=()=>paint($("#vehicleFrom").value,$("#vehicleTo").value);$("#vehicleToday").onclick=()=>{const d=today();$("#vehicleFrom").value=d;$("#vehicleTo").value=d;paint(d,d)};$("#vehicleWeek").onclick=()=>{const f=startOfWeek(),t=today();$("#vehicleFrom").value=f;$("#vehicleTo").value=t;paint(f,t)};$("#vehicleMonth").onclick=()=>{const f=firstOfMonth(),t=today();$("#vehicleFrom").value=f;$("#vehicleTo").value=t;paint(f,t)};$("#vehicleAll").onclick=()=>paint("0000-01-01","9999-12-31")}
+function vehicleRows(arr){if(!arr.length)return'<div class="empty">No vehicles found.</div>';return arr.map(r=>{const h=vehicleHistory(r.vehicleNumber),id="vh_"+r.id.replace(/[^A-Za-z0-9]/g,"_");return `<div class="vehicle-card"><div class="vehicle-head"><div><h3>${esc(r.vehicleNumber)}</h3><small>${esc(r.vehicleModel||h[0]?.vehicleModel||'Vehicle')} • ${h.length} record(s) • ${h.length>1?'Returning vehicle':'First visit'}</small></div><div class="profile-actions"><button class="btn blue" data-toggle-profile="${id}">🚘 Profile</button><button class="btn" data-toggle-history="${id}">History</button></div></div><div class="vehicle-details"><div class="detail-chip"><span>Customer</span><b>${esc(r.customerName||h[0]?.customerName||'—')}</b></div><div class="detail-chip"><span>Mobile</span><b>${esc(r.mobile||h[0]?.mobile||'—')}</b></div><div class="detail-chip"><span>Last Service</span><b>${prettyDate(h[0]?.date)}</b></div><div class="detail-chip"><span>Current KM</span><b>${Number(h[0]?.currentKm||0).toLocaleString('en-IN')} KM</b></div></div><div id="${id}" class="history-expand" hidden>${vehicleProfileHTML(r)}</div><div id="${id}_history" class="history-expand" hidden>${historyRows(h,false)}</div></div>`}).join('')}
+
+function renderHistory(){let filtered=dateFiltered(state.records,today(),today());$("#main").innerHTML=`<div class="page-head"><h1>Service History</h1></div><section class="card">${filterBar("history")}<input class="search" id="historySearch" placeholder="Search vehicle, customer, mobile, model or record no."><div id="historyResult"></div></section>`;const paint=()=>{const q=$("#historySearch").value.toLowerCase().trim(),arr=filtered.filter(r=>[r.recordNo,r.vehicleNumber,r.customerName,r.mobile,r.vehicleModel].join(" ").toLowerCase().includes(q));$("#historyResult").innerHTML=historyRows(arr)};bindDateFilter("history",(f,t)=>{filtered=dateFiltered(state.records,f,t);paint()});$("#historySearch").oninput=paint;paint()}
+function historyRows(arr,showActions=true){if(!arr.length)return'<div class="empty">No service records found.</div>';return `<div class="table-wrap"><table><thead><tr><th>Record</th><th>Date</th><th>Customer / Mobile</th><th>Vehicle</th><th>Service</th><th class="num">Total</th>${showActions?"<th>Actions</th>":""}</tr></thead><tbody>${arr.map(r=>`<tr><td>#${esc(r.recordNo)}</td><td>${prettyDate(r.date)}</td><td>${esc(r.customerName||"—")}<br>${esc(r.mobile||"—")}</td><td><b>${esc(r.vehicleNumber)}</b><br>${esc(r.vehicleModel)}<br>${Number(r.currentKm||0).toLocaleString("en-IN")} KM</td><td>${esc(r.classification)}<br>Tech: ${esc(r.technician||"—")}<br>${(r.services||[]).map(x=>esc(x.name)).join(", ")||"—"}</td><td class="num">${money(r.total)}</td>${showActions?`<td><button class="btn" data-edit="${r.id}">Edit</button> <button class="btn" data-print="${r.id}">Print</button></td>`:""}</tr>`).join("")}</tbody></table></div>`}
+function renderReminders(){
+  const all=state.reminders;
+  $("#main").innerHTML=`<div class="page-head"><h1>Service Reminders</h1></div>
+  <section class="card">
+    <div class="notice">Once a reminder message is sent, that reminder is removed from the pending list. It does not create another reminder.</div>
+    <div class="filterbar reminder-filterbar">
+      <div><label>Search</label><input id="reminderSearch" placeholder="Vehicle, customer or mobile"></div>
+      <div><label>From Date</label><input id="reminderFrom" type="date" value="${today()}"></div>
+      <div><label>To Date</label><input id="reminderTo" type="date" value="${today()}"></div>
+      <div class="filter-actions"><button class="btn blue" id="reminderApply">Apply</button><button class="btn" id="reminderClear">Clear</button></div>
+    </div>
+    <div class="quick-filters"><button id="remToday">Today</button><button id="remWeek">This Week</button><button id="remMonth">This Month</button><button id="remAll">All</button></div>
+    <div class="grid2"><div><label>Reminder Type</label><select id="reminderType"><option>All</option><option>Free Service</option><option>Wheel Alignment Service</option></select></div>
+    <div><label>Status</label><select id="reminderStatus"><option>All Pending</option><option>Due</option><option>Upcoming</option></select></div></div>
+    <div id="reminderResult"></div>
+  </section>`;
+  const paint=(f=today(),t=today())=>{
+    const q=$("#reminderSearch").value.toLowerCase().trim();
+    const type=$("#reminderType").value;
+    const status=$("#reminderStatus").value;
+    const now=today();
+    let arr=all.filter(x=>x.dueDate>=f&&x.dueDate<=t&&(!q||[x.vehicleNumber,x.customerName,x.mobile,x.type].join(" ").toLowerCase().includes(q))&&(type==="All"||x.type===type)&&(status==="All Pending"||(status==="Due"&&x.dueDate<=now)||(status==="Upcoming"&&x.dueDate>now))).sort((a,b)=>a.dueDate.localeCompare(b.dueDate));
+    const empty='<div class="empty">No pending reminders match the selected filters.</div>';
+    $("#reminderResult").innerHTML=`<div class="result-bar"><b>${arr.length} pending reminder(s)</b><span>Free: day 28 • Regular Alignment: 2 months</span></div>${arr.map(reminderCard).join("")||empty}`;
+  };
+  $("#reminderApply").onclick=()=>paint($("#reminderFrom").value,$("#reminderTo").value);
+  $("#reminderClear").onclick=()=>{const d=today();$("#reminderFrom").value=d;$("#reminderTo").value=d;$("#reminderSearch").value="";paint(d,d)};
+  $("#reminderSearch").oninput=()=>paint($("#reminderFrom").value,$("#reminderTo").value);
+  $("#reminderType").onchange=()=>paint($("#reminderFrom").value,$("#reminderTo").value);
+  $("#reminderStatus").onchange=()=>paint($("#reminderFrom").value,$("#reminderTo").value);
+  $("#remToday").onclick=()=>{const d=today();$("#reminderFrom").value=d;$("#reminderTo").value=d;paint(d,d)};
+  $("#remWeek").onclick=()=>{const f=startOfWeek(),t=today();$("#reminderFrom").value=f;$("#reminderTo").value=t;paint(f,t)};
+  $("#remMonth").onclick=()=>{const f=firstOfMonth(),t=today();$("#reminderFrom").value=f;$("#reminderTo").value=t;paint(f,t)};
+  $("#remAll").onclick=()=>{const f="0000-01-01",t="9999-12-31";$("#reminderFrom").value=f;$("#reminderTo").value=t;paint(f,t)};
+  paint();
+}
+function reminderCard(x){const pr=reminderPriority(x);const action=x.mobile?'<button class="btn green" data-reminder-send="'+esc(x.id)+'">WhatsApp</button>':'<span class="badge free">No Mobile</span>';return '<div class="reminder '+(pr.cls==='due'?'priority-due':pr.cls==='soon'?'priority-soon':'')+'"><div><h3>'+esc(x.vehicleNumber)+' — '+esc(x.customerName||"Customer")+'</h3><small>'+esc(x.type)+' • Reminder: '+prettyDate(x.dueDate)+' • Reference KM: '+Number(x.dueKm||0).toLocaleString("en-IN")+' KM</small></div><div><span class="badge '+pr.cls+'">'+pr.label+'</span> '+action+'</div></div>'}
+function renderReports(){
+  const d=today();
+  $("#main").innerHTML=`<div class="page-head"><h1>Reports</h1></div>
+  <section class="card">
+    <div class="filterbar report-filterbar">
+      <div><label>From Date</label><input id="reportFrom" type="date" value="${d}"></div>
+      <div><label>To Date</label><input id="reportTo" type="date" value="${d}"></div>
+      <div class="filter-actions"><button class="btn blue" id="reportApply">Apply Filter</button><button class="btn green" id="backupExcel">⬇ Backup Excel</button></div>
+    </div>
+    <div class="quick-filters"><button id="reportToday">Today</button><button id="reportWeek">This Week</button><button id="reportMonth">This Month</button><button id="reportAll">All</button></div>
+    <div id="reportContent"></div>
+  </section>`;
+  const paint=(f=today(),t=today())=>{
+    const arr=dateFiltered(state.records,f,t),value=arr.reduce((a,r)=>a+Number(r.total||0),0),free=arr.filter(r=>r.classification==="Free Service").length,regular=arr.filter(r=>(r.classification==="Wheel Alignment Service"||r.classification==="Regular Service")).length;
+    $("#reportContent").innerHTML=`<div class="result-bar"><b>${arr.length} service record(s)</b><span>${prettyDate(f)} to ${prettyDate(t)}</span></div><div class="stat-grid"><div class="stat"><div class="label">RECORDS</div><div class="num">${arr.length}</div></div><div class="stat"><div class="label">SERVICE VALUE</div><div class="num">${money(value)}</div></div><div class="stat"><div class="label">FREE SERVICE</div><div class="num">${free}</div></div><div class="stat"><div class="label">WHEEL ALIGNMENT SERVICE</div><div class="num">${regular}</div></div></div><div style="margin-top:14px">${historyRows(arr,false)}</div>`;
+  };
+  const current=()=>paint($("#reportFrom").value,$("#reportTo").value);
+  $("#reportApply").onclick=current;
+  $("#reportToday").onclick=()=>{ $("#reportFrom").value=d;$("#reportTo").value=d;current(); };
+  $("#reportWeek").onclick=()=>{const f=startOfWeek(),t=today();$("#reportFrom").value=f;$("#reportTo").value=t;current();};
+  $("#reportMonth").onclick=()=>{const f=firstOfMonth(),t=today();$("#reportFrom").value=f;$("#reportTo").value=t;current();};
+  $("#reportAll").onclick=()=>{const f="0000-01-01",t="9999-12-31";$("#reportFrom").value=f;$("#reportTo").value=t;current();};
+  $("#backupExcel").onclick=()=>backupExcel($("#reportFrom").value,$("#reportTo").value);
+  current();
+}
+function backupExcel(from,to){
+  if(typeof XLSX==="undefined"){alert("Excel backup library is not available. Please refresh the page and try again.");return;}
+  if(!from||!to||from>to){alert("Please select a valid From Date and To Date.");return;}
+  const records=dateFiltered(state.records,from,to);
+  const rows=records.map(r=>({
+    "Record No":r.recordNo||"","Date":r.date||"","Customer Name":r.customerName||"","Mobile":r.mobile||"",
+    "Vehicle Model":r.vehicleModel||"","Vehicle Number":r.vehicleNumber||"","Current KM":Number(r.currentKm||0),
+    "Service Classification":r.classification||"","Technician":r.technician||"","Customer Complaint":r.complaint||"",
+    "Work Completed / Remarks":r.workDone||"","Subtotal":Number(r.subtotal||0),"Discount":Number(r.discount||0),"Grand Total":Number(r.total||0)
+  }));
+  const items=[];
+  records.forEach(r=>(r.services||[]).forEach(x=>items.push({"Record No":r.recordNo||"","Date":r.date||"","Vehicle Number":r.vehicleNumber||"","Service / Item":x.name||"","Qty":Number(x.qty||0),"Rate":Number(x.rate||0),"Amount":Number(x.amount||0)})));
+  const reminders=state.reminders.filter(x=>(x.dueDate||"")>=from&&(x.dueDate||"")<=to).map(x=>({"Reminder Type":x.type||"","Reminder Date":x.dueDate||"","Vehicle Number":x.vehicleNumber||"","Customer Name":x.customerName||"","Mobile":x.mobile||"","Due KM":Number(x.dueKm||0),"Status":x.status||"pending"}));
+  const wb=XLSX.utils.book_new();
+  const ws=XLSX.utils.json_to_sheet(rows.length?rows:[{"Record No":"No service records in selected period"}]);
+  const wi=XLSX.utils.json_to_sheet(items.length?items:[{"Record No":"","Date":"","Vehicle Number":"","Service / Item":"No service items in selected period"}]);
+  const wr=XLSX.utils.json_to_sheet(reminders.length?reminders:[{"Reminder Type":"No reminders in selected period"}]);
+  XLSX.utils.book_append_sheet(wb,ws,"Service Records");XLSX.utils.book_append_sheet(wb,wi,"Service Items");XLSX.utils.book_append_sheet(wb,wr,"Reminders");
+  const stamp=from===to?from:`${from}_to_${to}`;
+  XLSX.writeFile(wb,`Sri_Hari_Tyres_Backup_${stamp}.xlsx`);
+  toast(`Excel backup created for ${prettyDate(from)} to ${prettyDate(to)}.`);
+}
+
+document.addEventListener("click",e=>{const ed=e.target.closest("[data-edit]");if(ed){const r=state.records.find(x=>x.id===ed.dataset.edit);if(r){state.editingRecord={...r};state.savedRecord={...r};setPage("service")};return}const pr=e.target.closest("[data-print]");if(pr){const r=state.records.find(x=>x.id===pr.dataset.print);if(r)openPrint(r);return}const tog=e.target.closest("[data-toggle-history]");if(tog){const el=$("#"+tog.dataset.toggleHistory+"_history");if(el){el.hidden=!el.hidden;tog.textContent=el.hidden?"History":"Hide History"}return}const prof=e.target.closest("[data-toggle-profile]");if(prof){const el=$("#"+prof.dataset.toggleProfile);if(el){el.hidden=!el.hidden;prof.textContent=el.hidden?"🚘 Profile":"✕ Close Profile"}return}const pkg=e.target.closest("[data-package]");if(pkg){const r=state.records.filter(x=>String(x.vehicleNumber||'').toUpperCase()===String(pkg.dataset.package||'').toUpperCase()).sort((a,b)=>(b.date||'').localeCompare(a.date||''))[0];if(r)oneTapCustomerPackage(r);return}const full=e.target.closest("[data-profile-history]");if(full){setPage("history");setTimeout(()=>{const q=$("#historySearch");if(q){q.value=full.dataset.profileHistory;q.dispatchEvent(new Event('input'))}},0);return}const rs=e.target.closest("[data-reminder-send]");if(rs){const r=state.reminders.find(x=>x.id===rs.dataset.reminderSend);if(r)sendReminder(r)}});
+function renderService(){$("#main").innerHTML=serviceFormHTML();bindService()}
+function render(){if(state.page==="service")renderService();else if(state.page==="dashboard")renderDashboard();else if(state.page==="vehicles")renderVehicles();else if(state.page==="history")renderHistory();else if(state.page==="reminders")renderReminders();else if(state.page==="reports")renderReports();else if(state.page==="qa")renderQA();else renderDashboard()}
+
+const QA_CASES=[["TC-01", "Page Load", "Open Service Record", "Open the live Service Record page", "Page loads without errors"], ["TC-02", "Record Number", "Next record number", "Open a new record", "Correct next service record number appears"], ["TC-03", "Validation", "Required fields", "Leave required fields empty and tap Save", "System prevents saving"], ["TC-04", "Not Applicable", "Optional details", "Select Not Applicable and leave optional details blank", "Record can be saved without those details"], ["TC-05", "Not Applicable PDF", "No schedule", "Create Not Applicable record and generate PDF", "Next Service Schedule is not shown"], ["TC-06", "Customer", "Customer details", "Enter customer name and mobile", "Details save/display correctly"], ["TC-07", "Existing Vehicle", "Reuse vehicle", "Select an existing vehicle number", "Correct vehicle/customer details populate"], ["TC-08", "Duplicate Vehicle", "Duplicate protection", "Try an existing vehicle incorrectly", "System warns/prevents unintended duplicate"], ["TC-09", "KM", "Current KM", "Enter valid current KM", "KM saves correctly"], ["TC-10", "KM Tracker", "KM progression", "Previous 25,000; new 28,000", "Progress/difference is correct"], ["TC-11", "KM Validation", "KM decrease", "Enter 20,000 after 25,000", "System warns about KM decrease"], ["TC-12", "Technician", "Technician selection", "Select technician", "Selected technician saves correctly"], ["TC-13", "Classification", "Service classification", "Test each classification", "Correct classification saves"], ["TC-14", "Charges", "Quantity calculation", "Enter quantity and rate", "Amount = quantity × rate"], ["TC-15", "Charges", "Rate update", "Change service rate", "Amount updates automatically"], ["TC-16", "Charges", "Multiple services", "Enter Alignment + Balancing + Rotation", "All selected services calculate correctly"], ["TC-17", "Charges", "Zero services", "Leave quantities zero", "Total remains correct"], ["TC-18", "Discount", "Discount calculation", "Enter discount", "Grand Total = Subtotal − Discount"], ["TC-19", "Save", "Save record", "Tap Save Service Record once", "Record saves"], ["TC-20", "Save", "Button state", "After successful save", "Button returns from Saving to normal state"], ["TC-21", "Save", "Double tap protection", "Tap Save twice quickly", "Only one record is created"], ["TC-22", "Save", "Confirmation", "Save successfully", "Correct record number shown"], ["TC-23", "History", "Service History", "Open Service History", "New record appears"], ["TC-24", "Vehicle Profile", "Vehicle profile", "Open saved vehicle profile", "Latest information is correct"], ["TC-25", "Timeline", "Vehicle service timeline", "Open vehicle history", "Chronological timeline is correct"], ["TC-26", "Print", "Print PDF", "Tap Print Service Record", "PDF opens"], ["TC-27", "PDF", "Service rows", "Create 3 services and generate PDF", "All 3 descriptions, Qty, Rate and Amount appear"], ["TC-28", "PDF", "Totals", "Check PDF", "Subtotal, Discount and Grand Total are correct"], ["TC-29", "PDF", "Amount formatting", "Check monetary values", "No corrupted digits/spaces"], ["TC-30", "WhatsApp", "Customer message", "Tap WhatsApp Customer", "Correct professional message opens"], ["TC-31", "WhatsApp", "Send Service Record", "Tap Send Service Record", "Correct PDF is prepared"], ["TC-32", "WhatsApp PDF", "Received PDF", "Send service PDF", "Customer receives PDF"], ["TC-33", "WhatsApp PDF", "Service descriptions", "Send multiple-service PDF", "Descriptions remain visible"], ["TC-34", "Schedule", "Free service", "Save eligible free service", "Correct next free schedule"], ["TC-35", "Schedule", "Paid service", "Save paid service", "Correct next paid schedule"], ["TC-36", "Schedule", "Not Applicable", "Save Not Applicable and generate PDF", "No next-service schedule"], ["TC-37", "Reminders", "Reminder creation", "Save eligible service", "Correct reminder generated"], ["TC-38", "Reminders", "Priority", "Test overdue/near/future", "Priority changes correctly"], ["TC-39", "Return Rate", "Returning customer", "Save another service for same vehicle", "Return status/rate updates"], ["TC-40", "Form", "Clear", "Tap Clear", "Form resets"], ["TC-41", "Persistence", "Refresh", "Save then refresh", "Data remains"], ["TC-42", "Offline", "Network failure", "Disconnect and attempt save", "No false success; clear error"], ["TC-43", "Mobile", "Android test", "Test main workflow on Android", "Works correctly"], ["TC-44", "Desktop", "Desktop test", "Test main workflow on desktop", "Works correctly"], ["TC-45", "Data Integrity", "Cross-check", "Compare record/history/profile/PDF", "Information is consistent"]];
+const QA_KEY="sriHariTyresQA_v1";
+function qaState(){try{return JSON.parse(localStorage.getItem(QA_KEY)||"{}")||{}}catch(e){return {}}}
+function qaPut(s){localStorage.setItem(QA_KEY,JSON.stringify(s))}
+function renderQA(){
+ const s=qaState(), done=QA_CASES.filter(x=>["PASS","FAIL","BLOCKED"].includes(s[x[0]]?.status)).length;
+ const pass=QA_CASES.filter(x=>s[x[0]]?.status==="PASS").length, fail=QA_CASES.filter(x=>s[x[0]]?.status==="FAIL").length, blocked=QA_CASES.filter(x=>s[x[0]]?.status==="BLOCKED").length;
+ const pct=Math.round(done/QA_CASES.length*100);
+ const autoDone=QA_CASES.filter(x=>s[x[0]]?.autoRun).length;
+ $("#main").innerHTML=`<div class="qa-wrap"><div class="qa-hero"><h1>🧪 QA / Test Mode</h1><p>45 test cases. Safe Auto Run never creates or edits Firebase records. Tests involving real WhatsApp delivery, offline network, or device-specific behaviour remain manual.</p></div>
+ <div class="qa-stats"><div class="qa-stat"><span>PROGRESS</span><b>${done} / ${QA_CASES.length}</b></div><div class="qa-stat"><span>PASS</span><b>${pass}</b></div><div class="qa-stat"><span>FAIL</span><b>${fail}</b></div><div class="qa-stat"><span>BLOCKED</span><b>${blocked}</b></div></div>
+ <div class="qa-progress"><div style="width:${pct}%"></div></div>
+ <div class="qa-toolbar"><button class="btn blue" id="qaAutoRun">▶ Run Safe Auto Tests</button><button class="btn" id="qaExport">⬇ Export Results</button><button class="btn" id="qaReset">↺ Reset QA Results</button><span id="qaAutoInfo" style="align-self:center;font-size:11px;color:#68778a">${autoDone?autoDone+' automated checks recorded.':''}</span></div>
+ <section class="card qa-table-wrap"><table class="qa-table"><thead><tr><th>ID</th><th>Area</th><th>Test Case</th><th>Steps / Test Data</th><th>Expected Result</th><th>Status</th><th>Remarks</th></tr></thead><tbody>
+ ${QA_CASES.map(x=>{const v=s[x[0]]||{status:"NOT TESTED",remarks:""};return `<tr><td><b>${x[0]}</b></td><td>${x[1]}</td><td><b>${x[2]}</b></td><td>${x[3]}</td><td>${x[4]}</td><td><select data-qa-status="${x[0]}"><option>NOT TESTED</option><option>PASS</option><option>FAIL</option><option>BLOCKED</option></select></td><td><textarea data-qa-remarks="${x[0]}" placeholder="Remarks...">${String(v.remarks||"").replace(/</g,"&lt;")}</textarea></td></tr>`}).join("")}
+ </tbody></table></section></div>`;
+ document.querySelectorAll("[data-qa-status]").forEach(el=>{el.value=s[el.dataset.qaStatus]?.status||"NOT TESTED";el.className=(el.value==="PASS"?"qa-pass":el.value==="FAIL"?"qa-fail":el.value==="BLOCKED"?"qa-blocked":"");el.onchange=()=>{const q=qaState();q[el.dataset.qaStatus]={status:el.value,remarks:q[el.dataset.qaStatus]?.remarks||"",autoRun:false};qaPut(q);renderQA()}});
+ document.querySelectorAll("[data-qa-remarks]").forEach(el=>el.oninput=()=>{const q=qaState();q[el.dataset.qaRemarks]={status:q[el.dataset.qaRemarks]?.status||"NOT TESTED",remarks:el.value,autoRun:q[el.dataset.qaRemarks]?.autoRun||false};qaPut(q)});
+ $("#qaReset").onclick=()=>{if(confirm("Reset all QA results?")){localStorage.removeItem(QA_KEY);renderQA()}};
+ $("#qaExport").onclick=()=>{const q=qaState(),a=document.createElement("a"),rows=[["Test ID","Test Area","Test Case","Steps / Test Data","Expected Result","Status","Remarks","Run Type"],...QA_CASES.map(x=>[x[0],x[1],x[2],x[3],x[4],q[x[0]]?.status||"NOT TESTED",q[x[0]]?.remarks||"",q[x[0]]?.autoRun?"AUTO":"MANUAL"])],csv=rows.map(r=>r.map(v=>`"${String(v).replace(/"/g,'""')}"`).join(",")).join("\n");a.href=URL.createObjectURL(new Blob([csv],{type:"text/csv"}));a.download="SriHari_QA_Test_Results.csv";a.click()};
+ $("#qaAutoRun").onclick=qaRunSafe;
+}
+
+async function qaRunSafe(){
+ const originalPage=state.page, results={};
+ const pass=(id,remark)=>results[id]={status:"PASS",remarks:remark,autoRun:true};
+ const fail=(id,remark)=>results[id]={status:"FAIL",remarks:remark,autoRun:true};
+ const manual=["TC-19","TC-20","TC-21","TC-22","TC-23","TC-26","TC-30","TC-31","TC-32","TC-34","TC-35","TC-37","TC-40","TC-41","TC-42","TC-43","TC-44"];
+ const set=id=>{const q=qaState();q[id]=results[id];qaPut(q)};
+ const safe=(id,fn)=>{try{const r=fn();if(r instanceof Promise)return r.then(v=>v?pass(id,"Automated safe check passed."):fail(id,"Automated safe check failed."));if(r)pass(id,"Automated safe check passed.");else fail(id,"Automated safe check failed.")}catch(e){fail(id,"Auto error: "+(e?.message||String(e)))} };
+ try{
+   await safe("TC-01",()=>{setPage("service");return !!$("#recordNo")&&!!$("#vehicleModel")&&!!$("#saveBtn")});
+   await safe("TC-02",()=>/^([A-Z]+)?\d+$/.test(String(recordNo())));
+   await safe("TC-03",()=>{let hit=false,old=window.alert;window.alert=()=>{hit=true};const oldReady=fbReady;fbReady=true;$("#classification").value="";saveRecord();fbReady=oldReady;window.alert=old;return hit});
+   await safe("TC-04",()=>{$("#classification").value="Not Applicable";updateServiceRequiredState();return [...document.querySelectorAll(".req-vehicle")].every(x=>x.style.display==="none")});
+   await safe("TC-05",()=>!printHTML({recordNo:"QA-NA",date:today(),classification:"Not Applicable",customerName:"QA",mobile:"",vehicleModel:"",vehicleNumber:"",currentKm:0,technician:"",services:[{name:"T/L Valve",qty:1,rate:100,amount:100}],subtotal:100,discount:0,total:100}).includes("NEXT SERVICE SCHEDULE"));
+   await safe("TC-06",()=>{const r=normalizeRecordForOutput({recordNo:"QA",customerName:"Test Customer",mobile:"9876543210",vehicleModel:"Nexon",vehicleNumber:"TN49AB1234",currentKm:25000,classification:"Wheel Alignment Service",services:[{name:"Wheel Alignment",qty:1,rate:400}]});return r.customerName==="Test Customer"&&r.mobile==="9876543210"&&r.services[0].amount===400});
+   await safe("TC-07",()=>{const r=state.records.find(x=>x.vehicleNumber);if(!r)return true;renderService();$("#vehicleNumber").value=r.vehicleNumber;loadVehicle();return (!r.customerName||$("#customerName").value===r.customerName)&&(!r.vehicleModel||$("#vehicleModel").value===r.vehicleModel)});
+   await safe("TC-08",()=>{const r=state.records.find(x=>x.vehicleNumber);if(!r)return true;renderService();const v=$("#vehicleNumber"),n=$("#vehicleDuplicateNotice");v.value=r.vehicleNumber;v.dispatchEvent(new Event("input",{bubbles:true}));v.dispatchEvent(new Event("change",{bubbles:true}));return !!n&&n.style.display!=="none";});
+   await safe("TC-09",()=>{const r=getForm();return Number.isFinite(r.currentKm)});
+   await safe("TC-10",()=>{const p=kmProgress(28000,30000);return p.remaining===2000&&p.pct>0});
+   await safe("TC-11",()=>false);
+   await safe("TC-12",()=>TECHNICIANS.length>=1&&TECHNICIANS.every(Boolean));
+   await safe("TC-13",()=>{renderService();const vals=[...$("#classification").options].map(o=>o.value);return ["Free Service","Wheel Alignment Service","Not Applicable"].every(v=>vals.includes(v));});
+   await safe("TC-14",()=>{renderService();$(".qty[data-i=\"0\"]").value="2";$(".rate[data-i=\"0\"]").value="400";calc();return getForm().services.find(x=>x.name===SERVICES[0])?.amount===800});
+   await safe("TC-15",()=>{$(".rate[data-i=\"0\"]").value="450";calc();return getForm().services.find(x=>x.name===SERVICES[0])?.amount===900});
+   await safe("TC-16",()=>{const rows=[0,1,2];rows.forEach((i,n)=>{$(`.qty[data-i="${i}"]`).value=String(n+1);$(`.rate[data-i="${i}"]`).value=String((n+1)*100)});calc();return getForm().subtotal===1400});
+   await safe("TC-17",()=>{document.querySelectorAll(".qty,.rate").forEach(x=>x.value="0");calc();return getForm().subtotal===0&&getForm().total===0});
+   await safe("TC-18",()=>{const q=$("#discount");q.value="50";const row=$(".qty[data-i=\"0\"]"),rate=$(".rate[data-i=\"0\"]");row.value="1";rate.value="400";calc();const f=getForm();return f.total===350});
+   await safe("TC-24",()=>{const r=state.records.find(x=>x.vehicleNumber);if(!r)return true;const d=vehicleProfileData(r.vehicleNumber);return Array.isArray(d.h)&&typeof d.current==="number"});
+   await safe("TC-25",()=>{const r=state.records.find(x=>x.vehicleNumber);if(!r)return true;const h=vehicleHistory(r.vehicleNumber);return h.every((x,i)=>i===0||String(h[i-1].date||"")>=String(x.date||""))});
+   await safe("TC-27",()=>{const h=printHTML({recordNo:"QA",date:today(),classification:"Wheel Alignment Service",vehicleModel:"Nexon",vehicleNumber:"TN49AB1234",currentKm:25000,services:[{name:"Wheel Alignment",qty:1,rate:400,amount:400},{name:"Wheel Balancing",qty:2,rate:350,amount:700},{name:"Rotation",qty:3,rate:400,amount:1200}],subtotal:2300,discount:50,total:2250});return ["Wheel Alignment","Wheel Balancing","Rotation"].every(x=>h.includes(x))});
+   await safe("TC-28",()=>{const r=normalizeRecordForOutput({services:[{name:"A",qty:1,rate:400},{name:"B",qty:2,rate:350}],discount:50});return r.subtotal===1100&&r.total===1050});
+   await safe("TC-29",()=>money(2250).includes("2,250")||money(2250).includes("2250"));
+   await safe("TC-33",()=>{const h=printHTML({recordNo:"QA",date:today(),classification:"Wheel Alignment Service",vehicleModel:"Nexon",vehicleNumber:"TN49AB1234",currentKm:25000,services:[{name:"Wheel Alignment",qty:1,rate:400,amount:400},{name:"Wheel Balancing",qty:2,rate:350,amount:700}],subtotal:1100,discount:0,total:1100});return h.indexOf("Wheel Alignment")>=0&&h.indexOf("Wheel Balancing")>=0});
+   await safe("TC-36",()=>!printHTML({recordNo:"QA",date:today(),classification:"Not Applicable",services:[],subtotal:0,discount:0,total:0}).includes("NEXT SERVICE SCHEDULE"));
+   await safe("TC-38",()=>reminderPriority({dueDate:today()}).label==="DUE NOW"&&reminderPriority({dueDate:addDays(today(),3)}).label.includes("DUE IN"));
+   await safe("TC-39",()=>{const r=customerReturnRate();return Number.isFinite(r.rate)&&r.rate>=0&&r.rate<=100});
+   await safe("TC-45",()=>{const r=normalizeRecordForOutput({recordNo:"QA",customerName:"A",vehicleNumber:"TN49AB1234",currentKm:25000,classification:"Wheel Alignment Service",services:[{name:"Wheel Alignment",qty:1,rate:400}]});const h=printHTML(r);return h.includes("Wheel Alignment")&&h.includes("400.00")&&h.includes("Rs. 400.00")});
+ }finally{
+   for(const id of Object.keys(results))set(id);
+   const q=qaState();manual.forEach(id=>{if(!results[id] && (!q[id]||q[id].status==="NOT TESTED")){q[id]={status:"NOT TESTED",remarks:"Manual live/device test required.",autoRun:false}}});
+   qaPut(q);state.editingRecord=null;state.savedRecord=null;setPage(originalPage==="qa"?"qa":originalPage);if(state.page!=="qa")setPage("qa");
+ }
+}
+
+render();
+initFirebase();
+
+</script>
+</body>
+</html>
