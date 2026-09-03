@@ -1,0 +1,12 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "sriHariTyres": {
+      "appData": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    }
+  }
+}
